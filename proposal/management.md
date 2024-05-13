@@ -16,6 +16,7 @@ Weaknesses:
 
 
 ## The resources needed
+~~
 
 
 
