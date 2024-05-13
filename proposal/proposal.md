@@ -8,11 +8,11 @@ A simple, low-cost and reliable device that could be implemented to measure the 
 
 # Presentation of the proposal
 
-This project aims to design a reliable and non-invasive monitoring device that is capable of recording the operational status of an oxygen concentrator and that is suitable for use in low-resource settings.
+This project aims to design a reliable and non-invasive monitoring device that is capable of recording the operational status of an oxygen concentrator and that is suitable for use in low-resource settings. The main aims of the project will be to:
 
-- various sensors will be tested and then considered in the context that the device will be used within in order to determine the best choice for the given requirements.  
-- due to the fact that there are multiple different brands of oxygen concentrators that all vary slightly in design, the next stage will be to work out how the sensor will be attached so that it can be used in any setting, and without having to adapt the device to fit a specific concentrator.  
-- given the existing infrastructure in the countries that this device is being designed for, a suitable method for collecting and trasnferring the data to the relevant people will be researched.
+- test various sensors and evaluate their effectiveness given the context that the device will be used in, in order to determine the best choice for the given requirements.  
+- design how the monitoring device will attach onto the oxygen concentrators. There are multiple different brands of concentrators all with slightly varying design, and the device should be made to be compatable with all versions without the need for alterations.   
+- investigate the existing infrastructure in the countries that this device is being designed for and then research a suitable method for collecting and trasnferring the data to the relevant people.
 
 # Assessment of the quality of the proposal
 
