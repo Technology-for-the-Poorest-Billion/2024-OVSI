@@ -2,6 +2,8 @@
 
 "Pneumonia kills more children than any other infectious disease, claiming the lives of over 700,000 children under five every year... almost all of these deaths are preventable" - UNICEF [2023]. It has been shown that in countries with robust oxygen systems, hospital-based pneumonia deaths can be reduced by half. However, due to the harsh operating environment in Sub-Saharan Africa and South East Asia where Pneumonia is most prevalent, these oxygen concentrators often fail to operate reliably.
 
+![Plan to reduce pneumonia.](assets/Protect-Prevent-Treat-Pneumonia.png)
+
 One of the main challenges for Ministries of Health is in collecting meaningful data about the usage of oxygen concentrators, which would help them to identify the needs and gaps of oxygen supplies in their country.
 
 A simple, low-cost and reliable device that could be implemented to measure the usage of any commercially available oxygen concentrator would be a huge benefit to biomedical engineers and Ministries of Health. It would allow for better management and allocation of oxygen concentrators throughout a region, to ensure that all concentrators are being used to maximal effect.
