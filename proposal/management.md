@@ -1,4 +1,4 @@
-# Project management plan
+# Project Management Plan
 
 
 ## The people
@@ -14,13 +14,17 @@ Harry Antill & Alex Beeston
 - Small team.
 
 **Skills Required:**
-- Appreciation of the climate where the technology is needed.
-- Critical analysis of solutions.
-- Ability to create rapid prototypes and assess functionality. 
-- Understanding of data storage and transfer.
+- Critical understanding of the cultural and operational environment where the technology is needed.
+- Ability to work with various stakeholders from different backgrounds.
+- Analytical skills to judge the effectiveness of solutions.
+- Ability to create rapid prototypes and quickly assess functionality. 
+- Programming and understanding of data storage and transfer.
+- Project management skills (resource coordination and risk management).
+- Technical writing and presentation skills.
 
 **Training Needed:**
-- Github.
+- GitHub.
+- Microcontrollers and sensors.
 - Data storage and transfer processes.
 - Potentially CAD modelling.
 - Potentially 3D printing.
