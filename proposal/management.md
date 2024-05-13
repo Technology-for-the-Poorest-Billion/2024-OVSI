@@ -12,7 +12,14 @@ Weaknesses:
 - Electrical and software engineering.
 - Small team.
 
-\bold(Skills Required):
+Skills Required:
+- Appreciation of the climate where the technology is needed.
+- Critical analysis of solutions.
+- Ability to create rapid prototypes and assess functionality. 
+- Understanding of data storage and transfer.
+
+Training Needed:
+Using github for distributive, open source sharing of solutions. 
 
 
 ## The resources needed
