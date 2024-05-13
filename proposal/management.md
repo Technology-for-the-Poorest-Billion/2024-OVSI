@@ -7,10 +7,11 @@ Harry Antill & Alex Beeston
 
 **Strengths:**
 - Mechanical and materials engineering. 
-- Previous project experience together.
+- Successful previous project experience together.
 
 **Weaknesses:**
 - Electrical and software engineering.
+- Knowledge of microcontrollers and sensor integration.
 - Small team.
 
 **Skills Required:**
