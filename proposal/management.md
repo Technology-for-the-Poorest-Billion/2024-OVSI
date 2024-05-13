@@ -32,6 +32,7 @@ Harry Antill & Alex Beeston
 - Sensors and other assortment of parts for testing of physical solutions.
 
 **Externally Sourced:**
+
 Will evolve as ideas are refined but likely to include:
 - Sensors.
 - Casing parts.
@@ -65,5 +66,5 @@ Total budget likely in region of £100.
 - Oxygen concentrators and sensors not recieved from Ben until late into the project. 
 
 **How to overcome**
-- If prototype not achievable then have CAD model and rigorous optioneering document to give insight into the best apporach tot he problem.
-- If physcial resources delayed make CAD model and prepare manufacture plan to streamline process when they do arrive. 
+- If prototype not achievable then have CAD model and rigorous optioneering document to give insight into the best apporach to the problem.
+- If physcial resources delayed, make CAD model and prepare manufacture plan to streamline process when they do arrive. 
