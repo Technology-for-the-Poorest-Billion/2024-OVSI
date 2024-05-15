@@ -41,7 +41,7 @@ Will evolve as ideas are refined but likely to include:
 - Sensors.
 - Casing parts.
 - 3D printed housing.
-- Bolts and other joining componenets.
+- Bolts and other joining components.
 - Cheap basic microcontroller.
 - Wiring and solder metal.
 
@@ -51,9 +51,9 @@ Total budget likely in region of £100.
 
 **Tasks:**
 - Week 1: Understanding the problem and identifying potential solutions.
-- Week 2: Initial testing of most promosing ideas.
-- Week 3: Tangible soluition to usage monitoring with testing and modifications.
-- Week 4: Attachement to the concentrator and degredation monitoring.
+- Week 2: Initial testing of most promising ideas.
+- Week 3: Tangible solution to usage monitoring with testing and modifications.
+- Week 4: Attachment to the concentrator and degradation monitoring.
 
 ## The assessment of the risks and safety
 
@@ -67,9 +67,9 @@ Total budget likely in region of £100.
 
 **Potential Pitfalls**
 - Prototype of solution is not achievable within timeframe. 
-- Difficultly sourcing appropriate sensors or resources.
+- Difficulty sourcing appropriate sensors or resources.
 
 **How to overcome**
-- If prototype not achievable then have CAD model and rigorous optioneering document to give insight into the best apporach to the problem.
-- If physcial resources delayed, make CAD model and prepare manufacture plan to streamline process when they do arrive. 
+- If prototype not achievable then have CAD model and rigorous optioneering document to give insight into the best approach to the problem.
+- If physical resources delayed, make CAD model and prepare manufacture plan to streamline process when they do arrive. 
 - We have many avenues for getting resources, both online or through Ben Moore who has funding for the project.
