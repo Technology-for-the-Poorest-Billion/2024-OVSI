@@ -10,11 +10,18 @@ A simple, low-cost and reliable device that could be implemented to measure the 
 
 # Presentation of the proposal
 
-This project aims to design a reliable and non-invasive monitoring device that is capable of recording the operational status of an oxygen concentrator and that is suitable for use in low-resource settings. The main aims of the project will be to:
+This project aims to design a reliable and non-invasive monitoring device that is capable of recording the operational status of an oxygen concentrator and that is suitable for use in low-resource settings. 
 
-- Test various sensors and evaluate their effectiveness given the context that the device will be used in, in order to determine the best choice for the given requirements. The sensor will be used to determine whether or not the concentrator is currently running.
-- Design how the monitoring device will attach onto the oxygen concentrators. There are multiple different brands of concentrators all with slightly varying designs, and the device should be made compatible with all versions without the need for alterations.
-- Look at how the data from the monitoring device would be stored and collected by the hospital workers. Also think about how the device could be used to show that an oxygen concentrator is currently in need of repair.
+## The main aims of the project will be to:
+
+- Test various sensors and evaluate their effectiveness given the context that the device will be used in, in order to determine the best choice for the given requirements. The sensor will be used to determine whether or not the concentrator is currently running.  
+- Perform degredation testing, to see if any of the sensors would be suitable to try and predict whether any maintenance/repairs will be necessary in the near future.  
+- Think about how the monitoring device will attach onto the oxygen concentrators. There are multiple different brands of concentrators all with slightly varying designs, and the device should be made to be compatible with all versions without the need for alterations.  
+
+## Additional aims if time allows:
+
+- Look at how the data from the monitoring device would be stored and collected by the hospital workers.  
+- Think about how the device could be used to show that an oxygen concentrator is currently in need of repair, so that data on the number of currently broken concentrators can also be collected.
 - Investigate the existing infrastructure in the countries that this device is being designed for and then research a suitable method for collecting and transferring the data to the relevant people.
 
 # Assessment of the quality of the proposal
