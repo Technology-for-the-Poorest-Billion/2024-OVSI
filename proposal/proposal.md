@@ -1,12 +1,12 @@
 # Problem description
 
-"Pneumonia kills more children than any other infectious disease, claiming the lives of over 700,000 children under five every year... almost all of these deaths are preventable" - UNICEF [2023]. It has been shown that in countries with robust oxygen systems, hospital-based pneumonia deaths can be reduced by half. However, due to the harsh operating environment in Sub-Saharan Africa and South East Asia where pneumonia is most prevalent, these oxygen concentrators often fail to operate reliably.
+"Pneumonia kills more children than any other infectious disease, claiming the lives of over 700,000 children under five every year... almost all of these deaths are preventable" - UNICEF [2024]. It has been shown that in countries with robust oxygen systems, hospital-based pneumonia deaths can be reduced by half. However, due to the harsh operating environment in Sub-Saharan Africa and South East Asia where pneumonia is most prevalent, these oxygen concentrators often fail to operate reliably.
 
 ![Plan to reduce pneumonia.](assets/Protect-Prevent-Treat-Pneumonia-graphic.png)
 
 The graphic above shows that there are three main 'pillars' that can help to reduce pneumonia related deaths in children: prevention, protection and treatment. As mentioned previously and shown in the graphic, one of the main ways that the treatment of children with pneumonia can be improved is by ensuring that everyone has access to essential commodities - such as oxygen. However, one of the main challenges for Ministries of Health is having the ability to collect meaningful data about the usage and operational status of their oxygen concentrators. If they were armed with this data it would help them to identify the needs and gaps of oxygen supplies in their country, and be able to deal with repair and maintenance more efficiently.
 
-A study by Bradley et al. [2015] on oxygen concentrator maintenance in The Gambia estimates that with the correct preventive maintainance the useful lifespan of these concentrators in low-resource settings could exceed 7 years. The preventive maintainence (PM) checks often resulted in minor repairs having to be carried out, which were generally low-cost and required a low level of experience to complete. This demonstrates that if the usage of a fleet of oxygen concentrators could be accurately measured and recorded, that it could help to schedule PM checks at the optimal times in the lifespan of each concentrator. The study noted that "forty-one per cent of faults needing repair were discovered during PM checks, which likely mitigate more serious or costly future breakdowns and lengthy equipment outages".
+A study by Bradley et al. [2015] on oxygen concentrator maintenance in The Gambia estimates that with the correct preventive maintainance the useful lifespan of these concentrators in low-resource settings could exceed 7 years. The preventive maintenance (PM) checks often resulted in minor repairs having to be carried out, which were generally low-cost and required a low level of experience to complete. This demonstrates that if the usage of a fleet of oxygen concentrators could be accurately measured and recorded, that it could help to schedule PM checks at the optimal times in the lifespan of each concentrator. The study noted that "forty-one per cent of faults needing repair were discovered during PM checks, which likely mitigate more serious or costly future breakdowns and lengthy equipment outages".
 
 It is clear therefore that a simple, low-cost and reliable device that could be implemented to measure the usage of any commercially available oxygen concentrator would be a huge benefit to both biomedical engineers and the Ministries of Health. It would allow for better management and allocation of oxygen concentrators throughout a region, to ensure that all concentrators are being used to maximal effect. By helping to better schedule PM it could also reduce the downtime of the oxygen concentrators and help to catch issues before they escalate into major and costly failures.
 
@@ -17,7 +17,7 @@ This project aims to design a reliable and non-invasive monitoring device that i
 ### The main aims of the project will be to:
 
 - Test various sensors and evaluate their effectiveness given the context that the device will be used in, in order to determine the best choice for the given requirements. The sensor will be used to determine whether or not the concentrator is currently running.  
-- Perform degredation testing, to see if any of the sensors would be suitable to try and predict whether any maintenance/repairs will be necessary in the near future.  
+- Perform degradation testing, to see if any of the sensors would be suitable to try and predict whether any maintenance/repairs will be necessary in the near future.  
 - Think about how the monitoring device will attach onto the oxygen concentrators. There are multiple different brands of concentrators all with slightly varying designs, and the device should be made to be compatible with all versions without the need for alterations.  
 
 ### Additional aims if time allows:
@@ -30,17 +30,17 @@ This project aims to design a reliable and non-invasive monitoring device that i
 
 From a brainstorm of potential usage monitoring methods we arrived at the following overarching methods:
 
-- Vibrations --> accelerometer fixed to outer casing will detect usage. It also has the potential to detect changes in frequencies which will indicate faults.
+- Vibrations --> accelerometer fixed to outer casing will detect usage. It also has the potential to detect changes in frequencies, which could indicate faults.
 
 - Power outlet --> current and/or voltage monitoring to detect usage data, however cannot be invasive i.e. become part of the medical device. 
 
-- Noise --> oxygen concentrators operate above 40dB which is comparable to a quiet refrigerator and so interferance in a busy hospital could be an issue. However it has the potential to be the cheapest sensor and could give a wide range of information about faults as well as identifying fault alarms from the concentrator, something the vibration sensor would be incapable of.
+- Noise --> oxygen concentrators operate above 40dB which is comparable to a quiet refrigerator and so interference in a busy hospital could be an issue. However it has the potential to be the cheapest sensor and could give a wide range of information about faults as well as identifying fault alarms from the concentrator, something the vibration sensor would be incapable of.
 
 - Magnetic field --> the motor for the compressor will result in a magnetic field, however this is more likely to involve an invasive solution to measure the magnetic field and an ideal solution does not require the machine to be tampered with.
 
 - Nitrogen output sensor --> flow would indicate the concentrator is in use and then partial pressure of nitrogen at the outlet would indicate how pure the oxygen is and hence give more detailed insight to the machine health. 
 
-The most feasible sensor choices for this project appear to be vibration and noise with the resources available. We will source a microcontroller that is able to interpret data from either an accelerometer or a microphone to determine whether the machine is operational or not. Based on these results we will choose the best suited approach to the problem given the operating enivornment. We will proceed with further testing and development to give more insightful feedback and decide how to fix the device to the concentrator considering the optimal position for functionailty and practical use.
+The most feasible sensor choices for this project appear to be vibration and noise with the resources available. We will source a microcontroller that is able to interpret data from either an accelerometer or a microphone to determine whether the machine is operational or not. Based on these results we will choose the best suited approach to the problem given the operating environment. We will proceed with further testing and development to give more insightful feedback and decide how to fix the device to the concentrator considering the optimal position for functionality and practical use.
 
 # Assessment of the quality of the proposal
 
