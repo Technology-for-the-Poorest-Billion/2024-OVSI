@@ -26,6 +26,22 @@ This project aims to design a reliable and non-invasive monitoring device that i
 - Think about how the device could be used to show that an oxygen concentrator is currently in need of repair, so that data on the number of currently broken concentrators can also be collected.
 - Investigate the existing infrastructure in the countries that this device is being designed for and then research a suitable method for collecting and transferring the data to the relevant people.
 
+### Initial scope:
+
+From a brainstorm of potential usage monitoring methods we arrived at the following overarching methods:
+
+- Vibrations --> accelerometer fixed to outer casing will detect usage. Potential to detect changes in frequencies which will indicate faults.
+
+- Power outlet --> current and/or voltage monitoring to detect usage data, however cannot be invasive i.e become part of a medical device. 
+
+- Noise --> oxygen concentrators operate above 40dB which is comparable to a quiet refrigerator and so interferance in a busy hospital could be an issue. However it has the potential to be the cheapest sensor and could give a wide range of information about faults as well as identifying alarms from the concentrator, something the vibration sensor would be incapable of.
+
+- Magnetic field --> the motor for the compressor will result in a magnetic field but this is more likely to involve an invasive solution to monitor and the ideal solution does not require the machine to be tampered with.
+
+- Nitrogen output sensor --> flow would indicate the concentrator is in use and then partial pressure of nitrogen at the outlet would indicate how pure the oxygen is and hence give more detailed insight to the machine health. 
+
+The most feasible for this project appear to be vibrations and noise with the resources available. We will source a microcontroller that is able to interpret data from either an accelerometer or a microphone to give inititially binary data of is the machine operational or not. Based on these results we will choose the most suited approach to the problem and the enivornment. We will proceed with further testing and developmnet to give more insightful feedback and decide how to fix the device to the concentrator with position considered for functionailty and practical use cases. 
+
 # Assessment of the quality of the proposal
 
 The Oxygen and Ventilator System Initiative (OVSI) "wants to ensure every individual has reliable and equitable access to essential medical oxygen". One of their key innovation domains is in developing a remote monitoring system that can integrate with all types of existing concentrators to track usage and schedule PM. Our proposal fits in well with this key aim, as it looks at doing early stage testing relating to the various different sensors that could be used and seeking out the potential of these sensors to detect any degradation of an oxygen concentrator. The output from this mini-project should help to give preliminary results and insights into the viablility of the different routes that could be taken to develop a non-invasive monitoring device.
