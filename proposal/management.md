@@ -12,7 +12,6 @@ Harry Antill & Alex Beeston
 **Weaknesses:**
 - Electrical and software engineering.
 - Knowledge of microcontrollers and sensor integration.
-- Small team.
 
 **Skills Required:**
 - Critical understanding of the cultural and operational environment where the technology is needed.
@@ -54,7 +53,7 @@ Total budget likely in region of £100.
 - Week 1: Understanding the problem and identifying potential solutions.
 - Week 2: Initial testing of most promosing ideas.
 - Week 3: Tangible soluition to usage monitoring with testing and modifications.
-- Week 4: Data storage and transfering in the developing world (theoretical).
+- Week 4: Attachement to the concentrator and degredation monitoring.
 
 ## The assessment of the risks and safety
 
