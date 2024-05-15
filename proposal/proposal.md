@@ -40,9 +40,10 @@ The Oxygen and Ventilator System Initiative (OVSI) "wants to ensure every indivi
 **Existing ecosystems** - The device must be designed in such a way that all of its functionality, from the way that it is powered to the way that it stores and transfers data, is able to fit in with the existing infrastructure.  
 
 
+
 ## References
 UNICEF, [2024]. *Pneumonia in Children Statistics - UNICEF DATA*. Available at: https://data.unicef.org/topic/child-health/pneumonia/#:~:text=Pneumonia%20kills%20more%20children%20than,of%20these%20deaths%20are%20preventable.
 
-Bradley B., Chow S., Nyassi E., Cheng Y., Peel D. and Stephen [2015]. *A retrospective analysis of oxygen concentrator maintenance needs and costs in a low-resource setting: experience from The Gambia*. Health and technology, 4(4), pp.319–328.
+Bradley B., Chow S., Nyassi E., Cheng Y., Peel D. and Howie S.R.C., [2015]. *A retrospective analysis of oxygen concentrator maintenance needs and costs in a low-resource setting: experience from The Gambia*. Health and technology, 4(4), pp.319–328.
 
 ‌
