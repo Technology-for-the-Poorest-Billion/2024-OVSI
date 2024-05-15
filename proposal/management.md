@@ -58,17 +58,18 @@ Total budget likely in region of £100.
 ## The assessment of the risks and safety
 
 **Risks:**
-- Tools used for physical manufacture can be sharp. Mitigated by using suitable protective equipment.
+- Tools used for physical manufacture can be sharp. Mitigated by using suitable protective equipment and having suitable training on relevant equipment.
 - Live electrical components. Do not make changes whilst connected to the power source.
 - Transport of large oxygen concentrator machines. Lift in pairs where necessary. 
 
 
-## Contengency plans
+## Contingency plans
 
 **Potential Pitfalls**
 - Prototype of solution is not achievable within timeframe. 
-- Oxygen concentrators and sensors not recieved from Ben until late into the project. 
+- Difficultly sourcing appropriate sensors or resources.
 
 **How to overcome**
 - If prototype not achievable then have CAD model and rigorous optioneering document to give insight into the best apporach to the problem.
 - If physcial resources delayed, make CAD model and prepare manufacture plan to streamline process when they do arrive. 
+- We have many avenues for getting resources, both online or through Ben Moore who has funding for the project.
