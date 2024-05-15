@@ -28,6 +28,10 @@ This project aims to design a reliable and non-invasive monitoring device that i
 
 # Assessment of the quality of the proposal
 
+The Oxygen and Ventilator System Initiative (OVSI) "wants to ensure every individual has reliable and equitable access to essential medical oxygen". One of their key innovation domains is in developing a remote monitoring system that can integrate with all types of existing concentrators to track usage and schedule PM. Our proposal fits in well with this key aim, as it looks at doing early stage testing relating to the various different sensors that could be used and seeking out the potential of these sensors to detect any degradation of an oxygen concentrator. The output from this mini-project should help to give preliminary results and insights into the viablility of the different routes that could be taken to develop a non-invasive monitoring device.
+
+### Key inclusive innovation principles/characteristics:
+
 **Standards and Regulations** - The device should be non-invasive in nature so that it easily meets the strict European standards and regulations that surround the use of medical devices.  
 **Collaboratively co-created** - The design process should involve all the stakeholders - particularly the end-users - to ensure that the device is both culturally and contextually appropriate.  
 **Enhance agency** - The device should give better control to biomedical technicians and Ministries of Health over the effective use of oxygen concentrators and ensure that they will be able to manage and maintain the technology independently.  
