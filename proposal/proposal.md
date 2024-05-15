@@ -6,19 +6,21 @@
 
 The graphic above shows that there are three main 'pillars' that can help to reduce pneumonia related deaths in children: prevention, protection and treatment. As mentioned previously and shown in the graphic, one of the main ways that the treatment of children with pneumonia can be improved is by ensuring that everyone has access to essential commodities - such as oxygen. However, one of the main challenges for Ministries of Health is having the ability to collect meaningful data about the usage and operational status of their oxygen concentrators. If they were armed with this data it would help them to identify the needs and gaps of oxygen supplies in their country, and be able to deal with repair and maintenance more efficiently.
 
-A simple, low-cost and reliable device that could be implemented to measure the usage of any commercially available oxygen concentrator would be a huge benefit to biomedical engineers and the Ministries of Health. It would allow for better management and allocation of oxygen concentrators throughout a region, to ensure that all concentrators are being used to maximal effect.
+A study by Bradley et al. [2015] on oxygen concentrator maintenance in The Gambia estimates that with the correct preventive maintainance the useful lifespan of these concentrators in low-resource settings could exceed 7 years. The preventive maintainence (PM) checks often resulted in minor repairs having to be carried out, which were generally low-cost and required a low level of experience to complete. This demonstrates that if the usage of a fleet of oxygen concentrators could be accurately measured and recorded, that it could help to schedule PM checks at the optimal times in the lifespan of each concentrator. The study noted that "forty-one per cent of faults needing repair were discovered during PM checks, which likely mitigate more serious or costly future breakdowns and lengthy equipment outages".
+
+It is clear therefore that a simple, low-cost and reliable device that could be implemented to measure the usage of any commercially available oxygen concentrator would be a huge benefit to both biomedical engineers and the Ministries of Health. It would allow for better management and allocation of oxygen concentrators throughout a region, to ensure that all concentrators are being used to maximal effect. By helping to better schedule PM it could also reduce the downtime of the oxygen concentrators and help to catch issues before they escalate into major and costly failures.
 
 # Presentation of the proposal
 
 This project aims to design a reliable and non-invasive monitoring device that is capable of recording the operational status of an oxygen concentrator and that is suitable for use in low-resource settings. 
 
-## The main aims of the project will be to:
+### The main aims of the project will be to:
 
 - Test various sensors and evaluate their effectiveness given the context that the device will be used in, in order to determine the best choice for the given requirements. The sensor will be used to determine whether or not the concentrator is currently running.  
 - Perform degredation testing, to see if any of the sensors would be suitable to try and predict whether any maintenance/repairs will be necessary in the near future.  
 - Think about how the monitoring device will attach onto the oxygen concentrators. There are multiple different brands of concentrators all with slightly varying designs, and the device should be made to be compatible with all versions without the need for alterations.  
 
-## Additional aims if time allows:
+### Additional aims if time allows:
 
 - Look at how the data from the monitoring device would be stored and collected by the hospital workers.  
 - Think about how the device could be used to show that an oxygen concentrator is currently in need of repair, so that data on the number of currently broken concentrators can also be collected.
