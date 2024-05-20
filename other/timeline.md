@@ -29,9 +29,11 @@
 
 ### HA 20/05/24
 Joint with Alex:
+
 '- Ben supplied us with breadboard, sensors and a raspberry pi pico wh
 - Attached the pico and accelerometer to the breadboard
 - Eventually agreed to leave sensor vertical and reduce the x component by 1g'
+  
 - Picked up new concentrator from Ben.
 - Researched sensitivity of accelerometer and likely primary and background signals.
 - Did some troubleshooting of code with Alex although largely left him to write it.
