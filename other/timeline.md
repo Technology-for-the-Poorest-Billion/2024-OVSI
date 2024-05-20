@@ -14,3 +14,15 @@
 - Made an account of software required to process raw vibration data.
 - Found modifications required for acoustic sensor.
 - Brief familiarisation with sensors and microctrollers we have / have on order. 
+
+### AB 20/05/24
+- Attempted set up of Arduino Uno without success
+- Ben supplied us with breadboard, sensors and a raspberry pi pico wh
+- Attached the pico and accelerometer to the breadboard
+- Coded the pico to output the acceleration components
+- Used python to create a live plot of the serial output
+- Had to adjust the plotter code to include a buffer to remove the significant delay
+- Tried multiple ways to remove the gravitational component of acceleration without success
+- Eventually agreed to leave sensor vertical and reduce the x component by 1g
+- Wrote code to save the serial output as a .csv file
+- Took multiple recordings of different scenarios to be analysed in the coming days
