@@ -1,0 +1,1 @@
+- noise might turn the sensor on. if so, we need to think about whether this will significantly influence the overall readings. If noise adds 30s per day that is not too bad. if noise adds 5hrs per day then this is not good.
