@@ -13,3 +13,23 @@ while True:
     utime.sleep(1)  # Wait for 1 second
     led.value(0)  # Turn the LED off
     utime.sleep(1)
+
+
+
+# Microphone testing
+
+import machine
+import utime
+
+# Initialize ADC on GPIO 26 (ADC0)
+adc = machine.ADC(26)
+
+while True:
+    # Read analog value from the sensor
+    sound_level = adc.read_u16()  # Reads a 16-bit value (0-65535)
+    
+    # Print the sound level
+    print("Sound Level:", sound_level)
+    
+    # Wait for a short period before reading again
+    utime.sleep(0.1)
