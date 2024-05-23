@@ -1,5 +1,8 @@
 ## Initial Testing:
 10s moving st.dev and 10s moving average both x36 greater when black concentrator is on compared to off.
+- 10s moving average becomes sensitive to the orientation of the device
+- 10s moving stdev is very sensitive to small one off knocks
+- perhaps a double threshold is the optimal way to do it
 
 import machine
 import utime
