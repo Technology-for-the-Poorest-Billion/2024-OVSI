@@ -1,1 +1,3 @@
-- noise might turn the sensor on. if so, we need to think about whether this will significantly influence the overall readings. If noise adds 30s per day that is not too bad. if noise adds 5hrs per day then this is not good.
+- Noise might turn the sensor on. If so, we need to think about whether this will significantly influence the overall usage readings. If noise adds 30s per day, that should be okay. If noise adds 5hrs per day then this will not be acceptable.
+- Will need to think about whether or not we remove gravity component. Either way it is important to check whether or not the device is accurately calibrated.
+- Dynamic feedback to adjust threshold over time. Alternatively, the ability to calibrate the threshold when placed on a new device.
