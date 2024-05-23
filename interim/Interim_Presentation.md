@@ -12,6 +12,10 @@
 - Data analysis of vibration readings.
 - Updated code to give accurate readings in presence of external factors.
 
+### Prototype and testing
+
+https://github.com/Technology-for-the-Poorest-Billion/2024-OVSI/assets/98593139/cfc9f4a7-5daf-4990-bf7b-f4c7b06e2e5d
+
 ### Issues and steps to overcome
 
 - First microphone gave poor data and so we reshuffled schedule to focus on vibration monitoring until a new sensor was delivered 3 days later. 
