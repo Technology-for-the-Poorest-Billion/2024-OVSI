@@ -3,6 +3,7 @@
 - 10s moving average becomes sensitive to the orientation of the device
 - 10s moving stdev is very sensitive to small one off knocks
 - perhaps a double threshold is the optimal way to do it
+- If we want the device to be able to run thresholds for magnitude and standard deviation on a 10s rolling average we will need a more powerful processor.
 
 import machine
 import utime

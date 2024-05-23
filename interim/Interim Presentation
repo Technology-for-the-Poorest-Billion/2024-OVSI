@@ -1,5 +1,16 @@
 # Interim Presentation
 
+### Work have we achieved to date
+- Background reading of other similar applications of NILM. 
+- Settled on our most promising idea for achieving operation monitoring using vibrations.
+- Connected accelerometer to microcontroller.
+- Written code to read and manipulate accelerometer data.
+- Connected LED circuit to give visual reading. 
+- 3D printed mounting solution for breadboard. 
+- Tested vibrations under variety of external factors to influence threshold and measurement approach.
+- Data analysis of vibration readings.
+- Updated code to give accurate readings in presence of external factors.
+
 ### Updated project development timeline 
 
 - Week 1: Understanding the problem and identifying potential solutions.
@@ -12,4 +23,6 @@ Slight reshuffle due to a delay in sound sensor arriving but overall ahead of sc
 ### Plan for project completion 
 
 - 2 days max testing microphone as it will likely be highly innacurate but worth ruling out with concrete testing. 
-- 
+- Further analysis of test data for vibrations to set design threshold. 
+- Finalise prototype with LED to show operation. 
+- Run longer timeframe test to establish accuracy. 
