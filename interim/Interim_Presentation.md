@@ -49,4 +49,4 @@ Slight reshuffle due to a delay in sound sensor arriving but overall ahead of sc
 - 2 days max testing microphone as it will likely be highly innacurate but worth ruling out with concrete testing. 
 - Further analysis of test data for vibrations to set design threshold. 
 - Run longer timeframe test to establish accuracy.
-- Decide if degredation  onitoring is feasible. Create a document of next actions and key feedback for Ben.
+- Decide if degredation monitoring is feasible. Create a document of next actions and key feedback for Ben.
