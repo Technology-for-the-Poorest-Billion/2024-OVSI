@@ -16,7 +16,12 @@
 
 ### Setting up the accelerometer
 
-**include here the setup of the breadboard circuit**
+To allow the Rasberry pi pico to read the accelerometer, we first soldered pins to the accelerometer to connect it the the breadboard. We then plugged them both into the breadboard and connected the following pins with jumper wires:
+ 
+ - **2-5V** to **3V3(OUT)** on pico.
+ - **SDA** to **I2C1 SDA** on pico.
+ - **SCL** to **I2C1 SCL** on pico.
+ - **GND** to **GND** on pico.
 
 - The first step was to be able to read the outputs from the accelerometer. This was done using an early version of the code main_interim_prototype.mpy and we were able to read the outputs using Thonny. It returned values of the x, y and z components of the acceleration as well as the magnitude.
 - In order to plot and visualise the accelerometer outputs we used python in VS Code to read the serial output and create a live plot using the Matplotlib animation function. An example of this plot can be seen in Figure 1 below.
