@@ -89,6 +89,10 @@ https://github.com/Technology-for-the-Poorest-Billion/2024-OVSI/assets/98593139/
 
 - By using python to manipulate and plot the readings from the accelerometer it allowed for much easier analysis of how the monitoring system was working. However, once we had the above system in place, it was possible to try and convert the concept back into micropython code and use it alongside the LED circuit once again. This is now running successfully, and follows the exact same concept as the above prototype. Figure 9 below shows a photo of the setup, whereby the green LED lights up when both the mean and standard devation values are above the threshold.
 
+<img src="assets/led_circuit.jpg" alt="photo of led breadboard set up" width="800"/>
+
+**Figure 9:** Breadboard with Raspberry Pi Pico, accelerometer sensor and LED circuit.
+
 
 ### Issues and steps to overcome
 
