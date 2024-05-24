@@ -41,4 +41,5 @@ Joint with Alex:
 - Created CAD model for clips.
 - Refined CAD model after intial 3D print.
 - Printed clips for attachment of breadboard to casing of concentrator.
+
   
