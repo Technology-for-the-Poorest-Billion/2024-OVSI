@@ -44,6 +44,9 @@
 
 **Figure 4:** Bar chart comparing the results from the black and blue concentrators.  
 
+**DISCUSS HERE NOW ABOUT WHY WE ARE USING DOUBLE THRESHOLD SYSTEM**
+
+- Using these results we initially attempted to code the double threshold system directly onto the Raspbery Pi Pico, using an integrated LED circuit. Whilst we managed to get it working for the mean threshold, when we added in the standard deviation data we had memory storage issues. For this reason the 'prototype' discussed in the nect section takes the accelerometer readings from the serial port and then does all the calculations and analysis in python on a laptop.
 
 # Prototype
 
@@ -51,7 +54,7 @@
 
 - Our 'prototype' python code takes the readings of the magnitude of acceleration as measured by the accelerometer, and finds the mean and standard deviation of the last 1000 readings (i.e. 10 seconds).
 - Every time a new reading comes in, the mean and standard deviation values are updated and then compared to a threshold. The thresholds have been determined from the testing done in the previous section. These thresholds determine whether or not the code thinks that the concentrator is currently turned on or off.
-- In order to visualise this information, we have used the Matplotlib animation function to plot the updated mean and standard deviation every time a new reading is taken. The plot shows the last 200 updated readings.
+- In order to visualise this information, we have used the Matplotlib.animation function to plot the updated mean and standard deviation every time a new reading is taken. The plot shows the last 200 updated readings.
 - The thresholds that are set for the mean and standard deviation are also plotted on the graph for easy viewing. When both thresholds are met the screen will turn green to show that the oxygen concentrator is running. If one or both of the outputs are below their respective thresholds then the screen will be red, indicating that the concentrator is not running. 
 
 ### Demonstration
@@ -78,10 +81,14 @@ Figure 8 shows the Matplotlib interface when the blue concentrator is turned off
 
 <img src="assets/interim_prototype_noise_from_concentrator.png" alt="screenshot of prototype with black on next to blue" width="800"/>
 
-**Figure 8:** Protoype output when the blue concentrator is turned off, and the black concentrator is turned on and touching.  
+**Figure 8:** Protoype output when the blue concentrator is turned off, and the black concentrator is turned on and touching. 
+
 Below is a demonstation video of the above tests being performed.
 
 https://github.com/Technology-for-the-Poorest-Billion/2024-OVSI/assets/98593139/cfc9f4a7-5daf-4990-bf7b-f4c7b06e2e5d
+
+- By using python to manipulate and plot the readings from the accelerometer it allowed for much easier analysis of how the monitoring system was working. However, once we had the above system in place, it was possible to try and convert the concept back into micropython code and use it alongside the LED circuit once again. This is now running successfully, and follows the exact same concept as the above prototype. Figure 9 below shows a photo of the setup, whereby the green LED lights up when both the mean and standard devation values are above the threshold.
+
 
 ### Issues and steps to overcome
 
@@ -106,7 +113,7 @@ Alex:
 - Reminder of how microcontrollers work using online resources and datasheets.
 - Learnt how to programme a Raspberry Pi Pico using micropython and Thonny.
 - Learnt how to read from the serial port using python.
-- Learnt how to use Matplotlib.animate to produce live plots.
+- Learnt how to use Matplotlib.animation to produce live plots.
 - This has all been self taught using various online sources.
 - Improved my resilience to the constant issues that I faced during coding
 
