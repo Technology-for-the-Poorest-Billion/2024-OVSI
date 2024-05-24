@@ -82,7 +82,7 @@ https://github.com/Technology-for-the-Poorest-Billion/2024-OVSI/assets/98593139/
 
 - First microphone gave poor data and so we reshuffled schedule to focus on vibration monitoring until a new sensor was delivered 3 days later. 
 - [Alex write about code issues and how they were resolved]
-- Need a more powerful microcontroller
+- To be able to store enough data to self calibrate we found that we would need a micrcontroller with more data storage capacity or a way of communicating both ways to the device to export the heavy data processing to the cloud.
 - During testing we found that uneven surfaces gave accelerometer magnitude readings in similar range to when it is in operation. We also found that we got a large spike in our baseline off test that pushed the standard deviation close to the operational level. Becasue of these two things we settled on using a double threshold of magnitude and standard deviation to eliminate false readings. 
 
 ### Personal and technical development
