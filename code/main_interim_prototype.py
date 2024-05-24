@@ -2,10 +2,11 @@
 #returns x,y,z and magnitude
 #has offest adjustment capability
 #adjusted to account for gravity by assuming sensor is placed vertically
+#tries to ensure that the data is recorded as close to every 0.01s as possible
 
 from machine import Pin, I2C
 import utime
-
+## should now print as close to 0.01s as possible
 # I2C setup
 i2c = I2C(1, scl=Pin(3), sda=Pin(2), freq=400000)
 
@@ -23,9 +24,9 @@ i2c.writeto_mem(ICM20948_ADDR, REG_PWR_MGMT_1, bytearray([0x01]))
 SENSITIVITY = 16384
 
 # Offsets measured during calibration
-offset_x = 0.00  # Replace with actual offset values
-offset_y = -0.03  # Replace with actual offset values
-offset_z = 0.05  # Replace with actual offset values
+offset_x = 0.0  # Replace with actual offset values
+offset_y = -0.02  # Replace with actual offset values
+offset_z = 0.07  # Replace with actual offset values
 
 def read_calibrated_accel():
     data = i2c.readfrom_mem(ICM20948_ADDR, REG_ACCEL_XOUT_H, 6)
@@ -43,10 +44,22 @@ def read_calibrated_accel():
     accel_x_g = accel_x / SENSITIVITY - offset_x - 1
     accel_y_g = accel_y / SENSITIVITY - offset_y
     accel_z_g = accel_z / SENSITIVITY - offset_z
-    mag = (accel_x_g ** 2 + accel_y_g ** 2 + accel_z_g **2) ** 0.5
+    mag = (accel_x_g ** 2 + accel_y_g ** 2 + accel_z_g ** 2) ** 0.5
     return accel_x_g, accel_y_g, accel_z_g, mag
 
+# Desired loop interval in milliseconds
+desired_interval_ms = 10
+
 while True:
+    start_time = utime.ticks_ms()
+    
     accel_x_g, accel_y_g, accel_z_g, mag = read_calibrated_accel()
     print('{:.3f},{:.3f},{:.3f},{:.3f}'.format(accel_x_g, accel_y_g, accel_z_g, mag))
-    utime.sleep(0.01)
+    
+    elapsed_time = utime.ticks_diff(utime.ticks_ms(), start_time)
+    sleep_time = desired_interval_ms - elapsed_time  # Calculate remaining time to sleep
+    if sleep_time > 0:
+        utime.sleep_ms(sleep_time)
+    else:
+        # If processing took longer than desired interval, print a warning
+        print("Warning: Processing is slower than the desired interval")

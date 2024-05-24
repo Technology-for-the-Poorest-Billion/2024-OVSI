@@ -1,10 +1,12 @@
-#prints readings live and save results to excel from main_interim_prototype.mpy
-#use ctrl + c to save to excel and stop code
+#prints mean and standard deviation from last 10s of data
+#you must wait 10s before the output starts to print
+#pico should be running code from main_interim_prototype.mpy
+# Use ctrl + c to stop the code
 
 import serial
-import pandas as pd
 import threading
 import time
+import numpy as np
 
 # Configure the serial port
 serial_port = 'COM8'  # Change this to your Pico's serial port
@@ -16,8 +18,11 @@ except serial.SerialException as e:
     print(f"Error opening serial port {serial_port}: {e}")
     exit()
 
-# List to store the data
-data = []
+# Buffer to store the last 1000 magnitude readings
+buffer_size = 1000
+mag_buffer = [0.0] * buffer_size
+buffer_index = 0
+buffer_filled = False
 
 # Flag to control the reading loop
 running = True
@@ -27,34 +32,35 @@ start_time = time.time()
 
 # Function to handle serial data reading
 def read_from_serial():
+    global buffer_index, buffer_filled
+    print("Wait 10s for output")
     while running:
         try:
             line = ser.readline().decode('utf-8').strip()
             if line:
                 try:
-                    x, y, z, mag = map(float, line.split(','))
-                    print(f"X: {x:.3f}, Y: {y:.3f}, Z: {z:.3f}, Magnitude: {mag:.3f}")
-                    data.append({'X': x, 'Y': y, 'Z': z, 'Magnitude': mag})
+                    _, _, _, mag = map(float, line.split(','))
+                    mag_buffer[buffer_index] = mag
+                    buffer_index = (buffer_index + 1) % buffer_size
+                    if buffer_index == 0:
+                        buffer_filled = True
+
+                    if buffer_filled:
+                        avg_mag = np.mean(mag_buffer)
+                        std_mag = np.std(mag_buffer)
+                        print(f"Average Magnitude: {avg_mag:.5f}, Standard Deviation: {std_mag:.5f}")
                 except ValueError:
                     print("Invalid line received")
         except serial.SerialException as e:
             print(f"Serial error: {e}")
             break
 
-# Function to save data to an Excel file
-def save_to_excel(data, filename='output.xlsx'):
-    df = pd.DataFrame(data)
-    df.to_excel(filename, index=False)
-
-# Function to stop the reading loop and save data
+# Function to stop the reading loop
 def stop_reading():
     global running
     running = False
     time.sleep(1)  # Give some time for the thread to stop
-    print("Exiting and saving data to Excel...")
-    save_to_excel(data)
     ser.close()
-    print("Data saved to output.xlsx")
 
     # Calculate and print the elapsed time
     elapsed_time = time.time() - start_time
