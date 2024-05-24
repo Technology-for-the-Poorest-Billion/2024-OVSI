@@ -15,33 +15,49 @@
 ### Testing
 
 <img src="assets/plotter_with_magnitude.png" alt="Screenshot of python plotter" width="800"/>
-**Figure 1:** Screenshot of the python script plotting the x, y, z components from the accelerometer as well as the magnitude (measured in 'g'). Shows the last 200 readings (ie 2 seconds).
+
+**Figure 1:** Screenshot of the python script plotting the x, y, z components from the accelerometer as well as the magnitude (measured in 'g'). Shows the last 200 readings (ie 2 seconds).  
+
 
 
 ### INCLUDE HERE A DESCRIPTION OF THE BELOW TESTS SO THAT THE CHARTS MAKE SENSE
 
 <img src="assets/black_tests.png" alt="bar chart of tests on black concentrator" width="800"/>
-**Figure 2:** Bar chart from the testing performed on the black concentrator.
+
+**Figure 2:** Bar chart from the testing performed on the black concentrator.  
+
 
 <img src="assets/blue_tests.png" alt="bar chart of tests on blue concentrator" width="800"/>
-**Figure 3:** Bar chart from the testing performed on the blue concentrator.
+
+**Figure 3:** Bar chart from the testing performed on the blue concentrator.  
+
 
 <img src="assets/blue_and_black_comparison.png" alt="bar chart comparing tests on black and blue concentrator" width="800"/>
-**Figure 4:** Bar chart comparing the results from the black and blue concentrators.
+
+**Figure 4:** Bar chart comparing the results from the black and blue concentrators.  
+
 
 ### Prototype
 
 <img src="assets/interim_prototype_on.png" alt="screenshot of prototype with blue conc on" width="800"/>
-**Figure 5:** Protoype output when the blue concentrator is turned on.
+
+**Figure 5:** Protoype output when the blue concentrator is turned on.  
+
 
 <img src="assets/interim_prototype_noise_from_concentrator.png" alt="screenshot of prototype with black on next to blue" width="800"/>
-**Figure 6:** Protoype output when the blue concentrator is turned off, and the black concentrator is turned on and touching.
+
+**Figure 6:** Protoype output when the blue concentrator is turned off, and the black concentrator is turned on and touching.  
+
 
 <img src="assets/interim_prototype_knocked.png" alt="screenshot of prototype with knock" width="800"/>
-**Figure 7:** Protoype output when the blue concentrator is turned off and knocked.
+
+**Figure 7:** Protoype output when the blue concentrator is turned off and knocked.  
+
 
 <img src="assets/interim_prototype_tilted.png" alt="screenshot of prototype with blue on tilt" width="800"/>
-**Figure 8:** Protoype output when the blue concentrator is turned off and left on an uneven surface.
+
+**Figure 8:** Protoype output when the blue concentrator is turned off and left on an uneven surface.  
+
 
 
 
