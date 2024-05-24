@@ -103,9 +103,12 @@ Harry:
 
 Alex:
 
-- Learnt how to code a Raspberry Pi Pico using micropython and Thonny.
+- Reminder of how microcontrollers work using online resources and datasheets.
+- Learnt how to programme a Raspberry Pi Pico using micropython and Thonny.
 - Learnt how to read from the serial port using python.
-- Learnt how to use Matplotlib.animate to produce live plots
+- Learnt how to use Matplotlib.animate to produce live plots.
+- This has all been self taught using various online sources.
+- Improved my resilience to the constant issues that I faced during coding
 
 ### Updated project development timeline 
 
