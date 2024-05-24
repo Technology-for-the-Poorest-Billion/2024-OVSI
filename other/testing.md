@@ -6,6 +6,7 @@
 - If we want the device to be able to run thresholds for magnitude and standard deviation on a 10s rolling average we will need a more powerful processor.
 - we were unable to find an algorithm that could remove gravitational component successfully. Perhaps find a way to do this or ensure that the sensor remains vertical
 - Could implement algorithm that on startup reads 10s of data and takes the average readings, then adjusts the offsets accordingly
+- Can we remove the lag time or discuss whether or not the lag is important?
 
 import machine
 import utime

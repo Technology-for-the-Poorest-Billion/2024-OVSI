@@ -30,7 +30,7 @@ offset_z = 0.07  # Replace with actual offset values
 # Buffer size
 BUFFER_SIZE = 1000
 
-# Circular buffer to store the last 1000 mag values
+# buffer to store the last 1000 mag values
 mag_buffer = [0] * BUFFER_SIZE
 buffer_index = 0
 buffer_filled = False

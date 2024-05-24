@@ -96,7 +96,9 @@ Harry:
 
 Alex:
 
-- coding
+- Learnt how to code a Raspberry Pi Pico using micropython and Thonny.
+- Learnt how to read from the serial port using python.
+- Learnt how to use Matplotlib.animate to produce live plots
 
 ### Updated project development timeline 
 
