@@ -15,7 +15,7 @@
 # Setup and Testing
 
 - The first step was to be able to read the outputs from the accelerometer. This was done using an early version of the code main_interim_prototype.mpy and we were able to read the outputs using Thonny. It returned values of the x, y and z components of the acceleration as well as the magnitude.
-- In order to plot and visualise the accelerometer outputs we used python in VS Code to read the serial output and create a live plot using the Matplotlib animate function. An example of this plot can be seen in Figure 1 below.
+- In order to plot and visualise the accelerometer outputs we used python in VS Code to read the serial output and create a live plot using the Matplotlib animation function. An example of this plot can be seen in Figure 1 below.
 
 <img src="assets/plotter_with_magnitude.png" alt="Screenshot of python plotter" width="800"/>
 
@@ -44,34 +44,36 @@
 # Prototype
 
 ### How it works
-- Our 'prototype' python code takes the readings of the magnitude of acceleration as measured by the accelerometer, and finds the mean and standard deviation of the last 1000 readings (ie 10 seconds).
-- It then uses the Matplotlib animate function to plot the updated mean and standard deviation every time a new reading is taken. The graph shows the last 200 updated readings.
-- The thresholds that are set for the mean and standard deviation are also plotted on the graph for easy viewing. Finally, when both thresholds are met the screen will turn green to show that the oxygen concentrator is being used. If one or both of the outputs are below the threshold then the screen will be red, indicating that the concentrator is not running. 
+- Our 'prototype' python code takes the readings of the magnitude of acceleration as measured by the accelerometer, and finds the mean and standard deviation of the last 1000 readings (i.e. 10 seconds).
+- It then uses the Matplotlib animation function to plot the updated mean and standard deviation every time a new reading is taken. The plot shows the last 200 updated readings.
+- The thresholds that are set for the mean and standard deviation are also plotted on the graph for easy viewing. When both thresholds are met the screen will turn green to show that the oxygen concentrator is running. If one or both of the outputs are below their respective thresholds then the screen will be red, indicating that the concentrator is not running. 
 
 ### Demonstration
-- All of the following data and graphics have been performed with the accelerometer attached to the blue oxygen concentrator (the quieter of the two).
+All of the following data and graphics have been produced from testing performed with the accelerometer attached to the blue oxygen concentrator (the quieter of the two).
+Figure 5 shows the Matplotlib output when the blue concentrator is turned on. Both the mean and standard deviation of the accelerometer readings are above the predetermined threshold and so the screen has turned green.
 
 <img src="assets/interim_prototype_on.png" alt="screenshot of prototype with blue conc on" width="800"/>
 
 **Figure 5:** Protoype output when the blue concentrator is turned on.  
 
-
-<img src="assets/interim_prototype_noise_from_concentrator.png" alt="screenshot of prototype with black on next to blue" width="800"/>
-
-**Figure 6:** Protoype output when the blue concentrator is turned off, and the black concentrator is turned on and touching.  
-
+Figure 6 shows how the mean and standard deviation are affected by large knock to the concentrator. This noise is enough to send the standard deviation reading well over the threshold, but the mean stays comfortably below, and so the screen stays red.
 
 <img src="assets/interim_prototype_knocked.png" alt="screenshot of prototype with knock" width="800"/>
 
-**Figure 7:** Protoype output when the blue concentrator is turned off and knocked.  
+**Figure 6:** Protoype output when the blue concentrator is turned off and knocked.  
 
+Figure 7 shows the effect of leaving the concentrator on an uneven surface and during this measurement the concentrator was turned off. It is clear that the mean reading is well above the threshold due to gravity affecting the accelerometer readings. However, the standard deviation remains close to zero and so because this threshold is not met, the screen remains red.
 
 <img src="assets/interim_prototype_tilted.png" alt="screenshot of prototype with blue on tilt" width="800"/>
 
-**Figure 8:** Protoype output when the blue concentrator is turned off and left on an uneven surface.  
+**Figure 7:** Protoype output when the blue concentrator is turned off and left on an uneven surface.  
 
+Figure 8 shows the Matplotlib interface when the blue concentrator is turned off, but the noisy black concentrator is turned on next to it and making direct contact. Whilst the readings are clearly above zero neither threshold is met and so the screen is red to show that the concentrator is not running.
 
+<img src="assets/interim_prototype_noise_from_concentrator.png" alt="screenshot of prototype with black on next to blue" width="800"/>
 
+**Figure 8:** Protoype output when the blue concentrator is turned off, and the black concentrator is turned on and touching.  
+Below is a demonstation video of the above tests being performed.
 
 https://github.com/Technology-for-the-Poorest-Billion/2024-OVSI/assets/98593139/cfc9f4a7-5daf-4990-bf7b-f4c7b06e2e5d
 
@@ -107,6 +109,6 @@ Slight reshuffle due to a delay in sound sensor arriving but overall ahead of sc
 ### Plan for project completion 
 
 - 2 days max testing microphone as it will likely be highly innacurate but worth ruling out with concrete testing. 
-- Further analysis of test data for vibrations to set design threshold. 
+- Further analysis of test data for vibrations to set design threshold. INCLUDE EXAMPLES SUCH AS TESTING ON DIFFERENT SURFACES AND FINDING DIFFERENT VIBRATION SOURCES...
 - Run longer timeframe test to establish accuracy.
 - Decide if degredation monitoring is feasible. Create a document of next actions and key feedback for Ben.
