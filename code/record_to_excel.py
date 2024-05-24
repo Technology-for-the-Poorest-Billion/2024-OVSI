@@ -22,6 +22,9 @@ data = []
 # Flag to control the reading loop
 running = True
 
+# Record the start time
+start_time = time.time()
+
 # Function to handle serial data reading
 def read_from_serial():
     while running:
@@ -30,7 +33,7 @@ def read_from_serial():
             if line:
                 try:
                     x, y, z, mag = map(float, line.split(','))
-                    print(f"X: {x:.2f}, Y: {y:.2f}, Z: {z:.2f}, Magnitude: {mag:.2f}")
+                    print(f"X: {x:.3f}, Y: {y:.3f}, Z: {z:.3f}, Magnitude: {mag:.3f}")
                     data.append({'X': x, 'Y': y, 'Z': z, 'Magnitude': mag})
                 except ValueError:
                     print("Invalid line received")
@@ -53,15 +56,18 @@ def stop_reading():
     ser.close()
     print("Data saved to output.xlsx")
 
+    # Calculate and print the elapsed time
+    elapsed_time = time.time() - start_time
+    print(f"Script ran for {elapsed_time:.2f} seconds")
+
 # Start the serial reading thread
 thread = threading.Thread(target=read_from_serial)
 thread.start()
 
-# Wait for user input to stop the script
+# Use ctrl + c to stop the code
 try:
     while True:
         time.sleep(1)
 except KeyboardInterrupt:
     stop_reading()
 
-# use ctrl + c to stop the code

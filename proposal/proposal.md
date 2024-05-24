@@ -2,8 +2,6 @@
 
 "Pneumonia kills more children than any other infectious disease, claiming the lives of over 700,000 children under five every year... almost all of these deaths are preventable" - UNICEF [2024]. It has been shown that in countries with robust oxygen systems, hospital-based pneumonia deaths can be reduced by half. However, due to the harsh operating environment in Sub-Saharan Africa and South East Asia where pneumonia is most prevalent, these oxygen concentrators often fail to operate reliably.
 
-<img src="assets/Protect-Prevent-Treat-Pneumonia-graphic.png" alt="Plan to reduce pneumonia." width="500"/>
-
 ![Plan to reduce pneumonia.](assets/Protect-Prevent-Treat-Pneumonia-graphic.png)
 
 The graphic above shows that there are three main 'pillars' that can help to reduce pneumonia related deaths in children: prevention, protection and treatment. As mentioned previously and shown in the graphic, one of the main ways that the treatment of children with pneumonia can be improved is by ensuring that everyone has access to essential commodities - such as oxygen. However, one of the main challenges for Ministries of Health is having the ability to collect meaningful data about the usage and operational status of their oxygen concentrators. If they were armed with this data it would help them to identify the needs and gaps of oxygen supplies in their country, and be able to deal with repair and maintenance more efficiently.

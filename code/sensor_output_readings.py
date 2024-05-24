@@ -20,7 +20,7 @@ def read_from_serial():
             if line:
                 try:
                     x, y, z, mag = map(float, line.split(','))
-                    print(f"X: {x:.2f}, Y: {y:.2f}, Z: {z:.2f}, Magnitude: {mag:.2f}")
+                    print(f"X: {x:.3f}, Y: {y:.3f}, Z: {z:.3f}, Magnitude: {mag:.3f}")
                 except ValueError:
                     print("Invalid line received")
         except serial.SerialException as e:

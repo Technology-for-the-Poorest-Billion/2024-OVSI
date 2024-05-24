@@ -1,3 +1,4 @@
+#micropython code for the pico
 #returns x,y,z and magnitude
 #has offest adjustment capability
 #adjusted to account for gravity by assuming sensor is placed vertically
@@ -47,5 +48,5 @@ def read_calibrated_accel():
 
 while True:
     accel_x_g, accel_y_g, accel_z_g, mag = read_calibrated_accel()
-    print('{:.2f},{:.2f},{:.2f},{:.2f}'.format(accel_x_g, accel_y_g, accel_z_g, mag))
+    print('{:.3f},{:.3f},{:.3f},{:.3f}'.format(accel_x_g, accel_y_g, accel_z_g, mag))
     utime.sleep(0.01)
