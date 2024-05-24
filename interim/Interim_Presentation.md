@@ -85,7 +85,7 @@ Harry:
 
 Alex:
 
-- 
+- coding
 
 ### Updated project development timeline 
 
