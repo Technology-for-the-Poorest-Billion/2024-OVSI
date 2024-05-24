@@ -2,15 +2,15 @@
 
 ### Work have we achieved to date
 
-- Background reading of other similar applications of non-intrusive load monitoring. 
-- Settled on our most promising idea for achieving operation monitoring using vibrations.
+- Background reading on other similar applications of non-intrusive load monitoring. 
+- Settled on our most promising idea for achieving monitoring using vibrations.
 - Connected accelerometer to microcontroller.
 - Written code to read and manipulate accelerometer data.
-- Connected LED circuit to give visual reading. 
+- Connected LED circuit to give visual interpretation of data.
 - 3D printed mounting solution for breadboard. 
-- Tested vibrations under variety of external factors to influence threshold and measurement approach.
+- Tested the vibration readings under a variety of conditions to help determine our measurement approach to monitoring.
 - Data analysis of vibration readings.
-- Updated code to give accurate readings in presence of external factors.
+- Developed and tested some prototype code using Matplotlib to determine and show whether or not the concentrator is on or off.
 
 ### Setup and Testing
 
