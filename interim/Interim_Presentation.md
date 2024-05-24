@@ -12,11 +12,16 @@
 - Data analysis of vibration readings.
 - Updated code to give accurate readings in presence of external factors.
 
-### Testing
+### Setup and Testing
+
+- The first step was to be able to read the outputs from the accelerometer. This was done using an early version of the code main_interim_prototype.mpy and we were able to read the outputs using Thonny. It returned values of the x, y and z components of the acceleration as well as the magnitude.
+- In order to plot and visualise the code we used python in VS Code to read the serial output and create a live plot using the Matplotlib animate function. An example of this plot can be seen in Figure 1 below.
 
 <img src="assets/plotter_with_magnitude.png" alt="Screenshot of python plotter" width="800"/>
 
 **Figure 1:** Screenshot of the python script plotting the x, y, z components from the accelerometer as well as the magnitude (measured in 'g'). Shows the last 200 readings (ie 2 seconds).  
+
+- Next we aimed to remove the gravitational component of the reading on the accelerometer, by using the inbuilt gyros. We tried various filters and algorithms but were unable to find a simple enough solution, and so to avoid wasting time we decided simply to assume the sensor always remains vertical, and remove a value of 1g from the z output.
 
 
 
