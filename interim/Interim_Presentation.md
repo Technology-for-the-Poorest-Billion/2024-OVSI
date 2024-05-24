@@ -14,7 +14,7 @@
 
 ### Testing
 
-<img src="assets/plotter_with_magnitude.png" alt="Screenshot of python plotter" width="500"/>
+<img src="assets/Plotter_with_magnitude.png" alt="Screenshot of python plotter" width="500"/>
 
 
 ### Prototype
