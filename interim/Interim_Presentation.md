@@ -14,7 +14,21 @@
 
 ### Testing
 
-<img src="assets/Plotter_with_magnitude.png" alt="Screenshot of python plotter" width="500"/>
+<img src="assets/plotter_with_magnitude.png" alt="Screenshot of python plotter" width="800"/>
+
+<img src="assets/black_tests.png" alt="bar chart of tests on black concentrator" width="800"/>
+
+<img src="assets/blue_tests.png" alt="bar chart of tests on blue concentrator" width="800"/>
+
+<img src="assets/blue_and_black_comparison.png" alt="bar chart comparing tests on black and blue concentrator" width="800"/>
+
+<img src="assets/interim_prototype_on.png" alt="screenshot of prototype with blue conc on" width="800"/>
+
+<img src="assets/interim_prototype_noise_from_concentrator.png" alt="screenshot of prototype with black on next to blue" width="800"/>
+
+<img src="assets/interim_prototype_knocked.png" alt="screenshot of prototype with knock" width="800"/>
+
+<img src="assets/interim_prototype_mean.png" alt="screenshot of prototype with blue on tilt" width="800"/>
 
 
 ### Prototype
