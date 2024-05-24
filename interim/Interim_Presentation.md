@@ -28,7 +28,7 @@
 
 <img src="assets/interim_prototype_knocked.png" alt="screenshot of prototype with knock" width="800"/>
 
-<img src="assets/interim_prototype_mean.png" alt="screenshot of prototype with blue on tilt" width="800"/>
+<img src="assets/interim_prototype_tilted.png" alt="screenshot of prototype with blue on tilt" width="800"/>
 
 
 ### Prototype
