@@ -12,7 +12,11 @@
 - Data analysis of vibration readings.
 - Updated code to give accurate readings in presence of external factors.
 
-### Prototype and testing
+### Testing
+
+
+
+### Prototype
 
 https://github.com/Technology-for-the-Poorest-Billion/2024-OVSI/assets/98593139/cfc9f4a7-5daf-4990-bf7b-f4c7b06e2e5d
 
