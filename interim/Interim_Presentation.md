@@ -2,7 +2,7 @@
 
 ### Work have we achieved to date
 
-- Background reading of other similar applications of NILM. 
+- Background reading of other similar applications of non-intrusive load monitoring. 
 - Settled on our most promising idea for achieving operation monitoring using vibrations.
 - Connected accelerometer to microcontroller.
 - Written code to read and manipulate accelerometer data.
