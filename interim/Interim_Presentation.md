@@ -19,8 +19,8 @@
 
 <img src="assets/plotter_with_magnitude.png" alt="Screenshot of python plotter" width="800"/>
 
-**Figure 1:** Screenshot of the python script plotting the x, y, z components from the accelerometer as well as the magnitude (measured in 'g'). The scale at the bottom shows the last 200 readings (ie 2 seconds).
-- Next we aimed to remove the gravitational component of the reading on the accelerometer, by using the inbuilt gyros. We tried various filters and algorithms but were unable to find a simple enough solution, and so to avoid wasting time we decided simply to assume the sensor always remains vertical, and remove a value of 1g from the z output.
+**Figure 1:** Screenshot of the python script plotting the x, y, z components from the accelerometer as well as the magnitude (measured in 'g'). The scale at the bottom shows the last 200 readings (i.e. 2 seconds).
+- Next we aimed to remove the gravitational component of the reading on the accelerometer by using the inbuilt gyros. We tried various filters and algorithms but were unable to find a simple enough solution, and so to avoid wasting time we decided simply to assume the sensor always remains vertical, and remove a value of 1g from the z output.
 
 
 
@@ -45,7 +45,8 @@
 
 ### How it works
 - Our 'prototype' python code takes the readings of the magnitude of acceleration as measured by the accelerometer, and finds the mean and standard deviation of the last 1000 readings (i.e. 10 seconds).
-- It then uses the Matplotlib animation function to plot the updated mean and standard deviation every time a new reading is taken. The plot shows the last 200 updated readings.
+- Every time a new reading comes in, the mean and standard deviation values are updated and then compared to a threshold. The thresholds have been determined from the testing done in the previous section. These thresholds determine whether or not the code thinks that the concentrator is currently turned on or off.
+- In order to visualise this information, we have used the Matplotlib animation function to plot the updated mean and standard deviation every time a new reading is taken. The plot shows the last 200 updated readings.
 - The thresholds that are set for the mean and standard deviation are also plotted on the graph for easy viewing. When both thresholds are met the screen will turn green to show that the oxygen concentrator is running. If one or both of the outputs are below their respective thresholds then the screen will be red, indicating that the concentrator is not running. 
 
 ### Demonstration
