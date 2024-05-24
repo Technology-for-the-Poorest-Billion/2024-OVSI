@@ -115,13 +115,14 @@ Alex:
 - Week 1: Understanding the problem and identifying potential solutions.
 - Week 2: Setup of vibration monitoring prototype and successful testing. 
 - Week 3: Sound monitoring feasability test, refinement of vibration prototype. 
-- Week 4: Documenting our invisiged next steps for the company. Project deliverables.
+- Week 4: Documenting our invisiged next steps for the development of the monitoring system. Submitting project deliverables.
 
 Slight reshuffle due to a delay in sound sensor arriving but overall ahead of schedule.
 
 ### Plan for project completion 
 
-- 2 days max testing microphone as it will likely be highly innacurate but worth ruling out with concrete testing. 
-- Further analysis of test data for vibrations to set design threshold. INCLUDE EXAMPLES SUCH AS TESTING ON DIFFERENT SURFACES AND FINDING DIFFERENT VIBRATION SOURCES...
-- Run longer timeframe test to establish accuracy.
-- Decide if degredation monitoring is feasible. Create a document of next actions and key feedback for Ben.
+- Initially looking to spend 2 days maximum testing the new microphone sensor. If early results seem promisng then we can continue with further testing, otherwise we will focus on further development of the accelerometer setup.
+- Further analysis of test data for vibrations to set a more robust design threshold. Looking to perform further experiments such as testing on different floor surfaces and trying to find various realistic sources of random noise.
+- Run longer duration tests to establish better accuracy.
+- Decide if degredation monitoring is feasible in the remaining time.
+- Create a document of next actions and key feedback for Ben, based off the project findings.
