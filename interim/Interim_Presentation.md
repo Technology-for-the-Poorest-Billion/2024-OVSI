@@ -86,8 +86,10 @@ https://github.com/Technology-for-the-Poorest-Billion/2024-OVSI/assets/98593139/
 ### Issues and steps to overcome
 
 - First microphone sensor gave poor data and so we reshuffled the schedule to focus on vibration monitoring until a new sensor was delivered 3 days later. 
-- [Alex write about code issues and how they were resolved]
-- Need a more powerful microcontroller
+- The inital Matplotlib.animate plot was severly lagging due to the fact that it was attempting to update the plot every time a new value was read. To overcome this we added in a buffer which stored the values to be plotted, and then seperately updated the plot at a more acheivable rate using the values stored in the buffer.
+- The output was failing to include all of the incoming values from the serial port. This is because initally the reading of the data was being performed inside the loop which was operating more slowly than the speed of the incoming data. To overcome this we added a seperate thread which was able to add the serial output readings to the buffer in the background, whilst the main code could continue to manipulate the data and update the plots.
+- We initally had problems performing the required calculations directly on the pico itself, which is why we resorted to doing it in python, so that we could continue with our testing without getting behind schedule. We eventually managed to get the LED code working on the pico again, and so we could transfer what we had done in python into micropython.
+- As mentioned above we aimed to remove the gravitational component of the reading on the accelerometer by using the inbuilt gyros. We tried various filters and algorithms but were unable to find a simple enough solution, and so to avoid wasting time we decided simply to assume the sensor always remains vertical, and remove a value of 1g from the z output.
 - During testing we found that uneven surfaces gave accelerometer magnitude readings in similar range to when it is in operation. We also found that we got a large spike in our baseline off test that pushed the standard deviation close to the operational level. Becasue of these two things we settled on using a double threshold of magnitude and standard deviation to eliminate false readings. 
 
 ### Personal and technical development
