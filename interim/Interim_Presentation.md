@@ -12,15 +12,14 @@
 - Data analysis of vibration readings.
 - Developed and tested some prototype code using Matplotlib to determine and show whether or not the concentrator is on or off.
 
-### Setup and Testing
+# Setup and Testing
 
 - The first step was to be able to read the outputs from the accelerometer. This was done using an early version of the code main_interim_prototype.mpy and we were able to read the outputs using Thonny. It returned values of the x, y and z components of the acceleration as well as the magnitude.
-- In order to plot and visualise the code we used python in VS Code to read the serial output and create a live plot using the Matplotlib animate function. An example of this plot can be seen in Figure 1 below.
+- In order to plot and visualise the accelerometer outputs we used python in VS Code to read the serial output and create a live plot using the Matplotlib animate function. An example of this plot can be seen in Figure 1 below.
 
 <img src="assets/plotter_with_magnitude.png" alt="Screenshot of python plotter" width="800"/>
 
-**Figure 1:** Screenshot of the python script plotting the x, y, z components from the accelerometer as well as the magnitude (measured in 'g'). Shows the last 200 readings (ie 2 seconds).  
-
+**Figure 1:** Screenshot of the python script plotting the x, y, z components from the accelerometer as well as the magnitude (measured in 'g'). The scale at the bottom shows the last 200 readings (ie 2 seconds).
 - Next we aimed to remove the gravitational component of the reading on the accelerometer, by using the inbuilt gyros. We tried various filters and algorithms but were unable to find a simple enough solution, and so to avoid wasting time we decided simply to assume the sensor always remains vertical, and remove a value of 1g from the z output.
 
 
@@ -42,7 +41,15 @@
 **Figure 4:** Bar chart comparing the results from the black and blue concentrators.  
 
 
-### Prototype
+# Prototype
+
+### How it works
+- Our 'prototype' python code takes the readings of the magnitude of acceleration as measured by the accelerometer, and finds the mean and standard deviation of the last 1000 readings (ie 10 seconds).
+- It then uses the Matplotlib animate function to plot the updated mean and standard deviation every time a new reading is taken. The graph shows the last 200 updated readings.
+- The thresholds that are set for the mean and standard deviation are also plotted on the graph for easy viewing. Finally, when both thresholds are met the screen will turn green to show that the oxygen concentrator is being used. If one or both of the outputs are below the threshold then the screen will be red, indicating that the concentrator is not running. 
+
+### Demonstration
+- All of the following data and graphics have been performed with the accelerometer attached to the blue oxygen concentrator (the quieter of the two).
 
 <img src="assets/interim_prototype_on.png" alt="screenshot of prototype with blue conc on" width="800"/>
 
@@ -72,6 +79,7 @@ https://github.com/Technology-for-the-Poorest-Billion/2024-OVSI/assets/98593139/
 
 - First microphone gave poor data and so we reshuffled schedule to focus on vibration monitoring until a new sensor was delivered 3 days later. 
 - [Alex write about code issues and how they were resolved]
+- Need a more powerful microcontroller
 - During testing we found that uneven surfaces gave accelerometer magnitude readings in similar range to when it is in operation. We also found that we got a large spike in our baseline off test that pushed the standard deviation close to the operational level. Becasue of these two things we settled on using a double threshold of magnitude and standard deviation to eliminate false readings. 
 
 ### Personal and technical development
