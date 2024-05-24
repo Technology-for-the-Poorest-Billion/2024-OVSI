@@ -1,7 +1,5 @@
-#this is micropython code for the pico
-#it calclates the variance of the data of the last 1000 readings (roughly 10s)
-#if the variance is above a certain threshold then the led will light up
-#this was an early prototype to show how the pico could be used to monitor the oxygen concentrator signals
+# this code performs the functions described in the interim presentation
+# it calculates the rolling values of mean and sd and lights up an led depending on whether they both reach the desired threshold
 
 from machine import Pin, I2C
 import utime
@@ -30,7 +28,7 @@ offset_z = 0.07  # Replace with actual offset values
 # Buffer size
 BUFFER_SIZE = 1000
 
-# buffer to store the last 1000 mag values
+# Circular buffer to store the last 1000 mag values
 mag_buffer = [0] * BUFFER_SIZE
 buffer_index = 0
 buffer_filled = False
@@ -61,7 +59,7 @@ def read_calibrated_accel():
     mag = (accel_x_g ** 2 + accel_y_g ** 2 + accel_z_g ** 2) ** 0.5
     return accel_x_g, accel_y_g, accel_z_g, mag
 
-def update_variance(new_value):
+def update_stats(new_value):
     global buffer_index, buffer_filled, sum_mag, sum_mag_squared
     
     old_value = mag_buffer[buffer_index]
@@ -78,8 +76,8 @@ def update_variance(new_value):
     
     count = BUFFER_SIZE if buffer_filled else buffer_index
     mean = sum_mag / count
-    variance = (sum_mag_squared / count) - (mean ** 2)
-    return variance
+    standard_dev = ((sum_mag_squared / count) - (mean ** 2)) ** 0.5
+    return mean, standard_dev
 
 # Desired loop interval in milliseconds
 desired_interval_ms = 10
@@ -90,11 +88,11 @@ while True:
     accel_x_g, accel_y_g, accel_z_g, mag = read_calibrated_accel()
     print('{:.3f},{:.3f},{:.3f},{:.3f}'.format(accel_x_g, accel_y_g, accel_z_g, mag))
     
-    variance = update_variance(mag)
+    mean, standard_dev = update_stats(mag)
     
     if buffer_filled:
-        print('Variance: {:.6f}'.format(variance))
-        if variance > 0.004:
+        print('Mean: {:.6f}, SD: {:.6f}'.format(mean, standard_dev))
+        if mean > 0.04 and standard_dev > 0.02:
             led.value(1)  # Turn the LED on
         else:
             led.value(0)  # Turn the LED off
