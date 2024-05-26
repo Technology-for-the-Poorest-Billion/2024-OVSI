@@ -37,7 +37,7 @@ Next we attempted to remove the gravitational component of the reading on the ac
 
 In order to test our accelerometer under the same conditions each time, it was important to create a system to mount the breadboard to the concentrator. Using a CAD design and 3D printing, we made clips that are glued to the plastic casing and allowed the breadboard to be attatched and removed easily. See clip.STL in the assests file.
 
-<img src="assets/clip.png" alt="clip.STL" width="800"/>
+<img src="assets/clip.png" alt="clip.STL" width="400"/>
 
 We then ran tests to see if we could find a suitable vibration threshold that would indicate if the oxygen concentrator was being used. To do this we ran six different experiments, where we measured the vibrations:
 - when the concentrator was turned on
