@@ -28,6 +28,7 @@ Reading the output:
 The next step was to be able to read the outputs from the accelerometer. This was done using an early version of the code main_interim_prototype.mpy and we were able to read the outputs using Thonny. It returned values of the x, y and z components of the acceleration as well as the magnitude.
 In order to plot and visualise the accelerometer outputs we used Python in VS Code to read the serial output and create a live plot using the Matplotlib animation function. An example of this plot can be seen in Figure 1 below.
 
+<img src="assets/plotter_with_magnitude.png" alt="Screenshot of python plotter" width="800"/>
 
 **Figure 1:** Screenshot of the python script plotting the x, y, z components from the accelerometer as well as the magnitude (measured in 'g'). The scale at the bottom shows the last 200 readings (i.e. 2 seconds).
 
