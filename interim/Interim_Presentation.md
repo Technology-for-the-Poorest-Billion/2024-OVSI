@@ -28,7 +28,6 @@ Reading the output:
 The next step was to be able to read the outputs from the accelerometer. This was done using an early version of the code main_interim_prototype.mpy and we were able to read the outputs using Thonny. It returned values of the x, y and z components of the acceleration as well as the magnitude.
 In order to plot and visualise the accelerometer outputs we used python in VS Code to read the serial output and create a live plot using the Matplotlib animation function. An example of this plot can be seen in Figure 1 below.
 
-<img src="assets/plotter_with_magnitude.png" alt="Screenshot of python plotter" width="800"/>
 
 **Figure 1:** Screenshot of the python script plotting the x, y, z components from the accelerometer as well as the magnitude (measured in 'g'). The scale at the bottom shows the last 200 readings (i.e. 2 seconds).
 
@@ -38,13 +37,15 @@ Next we attempted to remove the gravitational component of the reading on the ac
 
 In order to test our accelerometer under the same conditions each time, it was important to create a system to mount the breadboard to the concentrator. Using a CAD design and 3D printing, we made clips that are glued to the plastic casing and allowed the breadboard to be attatched and removed easily. See 4Clip2 - Clip1-1.STL.
 
+
+
 We then ran tests to see if we could find a suitable vibration threshold that would indicate if the oxygen concentrator was being used. To do this we ran six different experiments, where we measured the vibrations:
-    - when the concentrator was turned on
-    - when the concentrator was turned off with no noise
-    - when the concentrator with the sensor attached was turned off, but the other concentrator was turned on and touching it
-    - when the concentrator with the sensor attached was turned off, but the other concentrator was turned on and 10cm away from it
-    - when the concentrator with the sensor attached was turned off, but we continuously rolled a trolley past and simulated heavy footfall
-    - when the concentrator with the sensor attached was turned off, but we put the front wheels on blocks to simulate being on uneven ground
+- when the concentrator was turned on
+- when the concentrator was turned off with no noise
+- when the concentrator with the sensor attached was turned off, but the other concentrator was turned on and touching it
+- when the concentrator with the sensor attached was turned off, but the other concentrator was turned on and 10cm away from it
+- when the concentrator with the sensor attached was turned off, but we continuously rolled a trolley past and simulated heavy footfall
+- when the concentrator with the sensor attached was turned off, but we put the front wheels on blocks to simulate being on uneven ground
 
 Each test was run for 120 seconds. We then took the data and calculated the value of every rolling 10s mean and standard deviation. On the graphs we then plotted the smallest value of the rolling mean and standard deviation for the baseline-on test, and then the largest of the mean and standard deviation for the other test cases. 
 
