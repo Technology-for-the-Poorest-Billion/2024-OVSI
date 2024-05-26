@@ -1,9 +1,9 @@
 # Interim Presentation
 
-### Work have we achieved to date
+### Work we have achieved to date
 
 - Background reading on other similar applications of non-intrusive load monitoring. 
-- Settled on our most promising idea for achieving monitoring using vibrations.
+- Settled on our most promising idea for achieving monitoring using vibration sensing.
 - Connected accelerometer to microcontroller.
 - Written code to read and manipulate accelerometer data.
 - Connected LED circuit to give visual interpretation of data.
@@ -16,44 +16,58 @@
 
 ### Setting up the accelerometer
 
-To allow the Rasberry pi pico to read the accelerometer, we first soldered pins to the accelerometer to connect it the the breadboard. We then plugged them both into the breadboard and connected the following pins with jumper wires:
+- To allow the Rasberry pi pico to read the accelerometer outputs, we first soldered pins onto the accelerometer so that we could connect it the the breadboard. We then attached the pico and accelerometer onto the breadboard and connected them together using jumper wires between the following pins:
  
- - **2-5V** to **3V3(OUT)** on pico.
- - **SDA** to **I2C1 SDA** on pico.
- - **SCL** to **I2C1 SCL** on pico.
- - **GND** to **GND** on pico.
+ - **2-5V** on accelerometer to **3V3(OUT)** on pico.
+ - **SDA** on accelerometer to **I2C1 SDA** on pico.
+ - **SCL** on accelerometer to **I2C1 SCL** on pico.
+ - **GND** on accelerometer to **GND** on pico.
 
 Reading the ouput:
 
-- The first step was to be able to read the outputs from the accelerometer. This was done using an early version of the code main_interim_prototype.mpy and we were able to read the outputs using Thonny. It returned values of the x, y and z components of the acceleration as well as the magnitude.
+- The next step was to be able to read the outputs from the accelerometer. This was done using an early version of the code main_interim_prototype.mpy and we were able to read the outputs using Thonny. It returned values of the x, y and z components of the acceleration as well as the magnitude.
 - In order to plot and visualise the accelerometer outputs we used python in VS Code to read the serial output and create a live plot using the Matplotlib animation function. An example of this plot can be seen in Figure 1 below.
 
 <img src="assets/plotter_with_magnitude.png" alt="Screenshot of python plotter" width="800"/>
 
 **Figure 1:** Screenshot of the python script plotting the x, y, z components from the accelerometer as well as the magnitude (measured in 'g'). The scale at the bottom shows the last 200 readings (i.e. 2 seconds).
-- Next we aimed to remove the gravitational component of the reading on the accelerometer by using the inbuilt gyros. We tried various filters and algorithms but were unable to find a simple enough solution, and so to avoid wasting time we decided simply to assume the sensor always remains vertical, and remove a value of 1g from the z output.
+- Next we attempted to remove the gravitational component of the reading on the accelerometer by using the inbuilt gyros. We tried various filters and algorithms but were unable to find a simple enough solution, and so to avoid wasting time we decided simply to assume the sensor always remains vertical, and remove a value of 1g from the z output.
 
-In order to test our accelerometer under the same conditions each time, it was important to create a sytem to mount the breadboard to the concentrator. Using a CAD design and 3D printing, we made clips that are glued to the plastic casing and allowed the breadboard to be attatched and removed easily. See 4Clip2 - Clip1-1.STL.
+### Performing testing
 
-We then ran tests to find a suitable vibration threshold that would indicate if the oxygen concentrator was being used. The first chart below shows tests we ran with the accelerometer attatched to the black (significantly more powerful) concentrator. This shows that both the mean magnitude of vibration and the standard deviation can be easily differentiated from the other cases. However, the chart below tells a different story. The blue, EverFlo concentrator is significantly more quiet - 43dB rather than 69dB for the black one. The most common concentrators used in the target market are 40-50dB, so this is more indicitve of the results we will see. Here we see that the data produced is of the same or exceeding magnitude to the baseline-on case. This makes detection more difficult. Having the powerful concentrator on next to the blue one gives comparable values to the on state and could give false readings. Furthermore, uneven ground gives large readings for the magnitude, so any unexpected placement of the concentrator could give false readings. The final chart shows the relative readings of the two oxygen concentrators, this shows that any strongly vibrating machinery placed nearby to the concentrator could result in false readings. This is something we plan to test further and understand the liklihood and severity of this case in practice.
+In order to test our accelerometer under the same conditions each time, it was important to create a system to mount the breadboard to the concentrator. Using a CAD design and 3D printing, we made clips that are glued to the plastic casing and allowed the breadboard to be attatched and removed easily. See 4Clip2 - Clip1-1.STL.
+
+We then ran tests to see if we could find a suitable vibration threshold that would indicate if the oxygen concentrator was being used. To do this we ran six different experiments, where we measured the vibrations:
+    - when the concentrator was turned on
+    - when the concentrator was turned off with no noise
+    - when the concentrator with the sensor attached was turned off, but the other concentrator was turned on and touching it
+    - when the concentrator with the sensor attached was turned off, but the other concentrator was turned on and 10cm away from it
+    - when the concentrator with the sensor attached was turned off, but we continuously rolled a trolley past and simulated heavy footfall
+    - when the concentrator with the sensor attached was turned off, but we put the front wheels on blocks to simulate being on uneven ground
+
+Each test was run for 120 seconds. We then took the data and calculated the value of every rolling 10s mean and standard deviation. On the graphs we then plotted the smallest value of the rolling mean and standard deviation for the baseline-on test, and then the largest of the mean and standard deviation for the other test cases. 
+
+ Figure 2 below shows the results from when the accelerometer was attatched to the black (significantly louder) concentrator. This shows that both the mean magnitude of vibration and the standard deviation when the concentrator is on can be easily differentiated from the other cases. 
 
 <img src="assets/black_tests.png" alt="bar chart of tests on black concentrator" width="800"/>
 
 **Figure 2:** Bar chart from the testing performed on the black concentrator.  
 
+However, the Figure 3 below tells a different story. The blue EverFlo concentrator is significantly more quiet - 43dB rather than 69dB for the black one. The most common concentrators used in the target market are 40-50dB, so this is more indicitve of the results we would expect to see during service. Here the results show that the mean and standard deviation for the test cases is of a similar or greater magnitude to the baseline-on case. This makes detection more difficult. Having the powerful black concentrator turned on next to the blue one gives comparable values to when the blue concentrator is in the on state and so could give false readings. Furthermore, uneven ground gives large readings for the magnitude, so any unexpected placement of the concentrator could give false readings. Also the standard devation for the baseline-off test was much larger than expected, and after further analysis this was due to just a few larger values, which shows the ability of short impacts to the concentrator to spike the standard deviation reading.
 
 <img src="assets/blue_tests.png" alt="bar chart of tests on blue concentrator" width="800"/>
 
 **Figure 3:** Bar chart from the testing performed on the blue concentrator.  
 
+Figure 4 shows the relative readings from the tests performed on the two oxygen concentrators, this shows that any strongly vibrating machinery placed nearby to the blue concentrator could result in false readings, whereas for the black concentrator it is much easier to differentiate the on and off state. This is something we plan to test further in order to better understand the liklihood and severity of this case in practice.
 
 <img src="assets/blue_and_black_comparison.png" alt="bar chart comparing tests on black and blue concentrator" width="800"/>
 
 **Figure 4:** Bar chart comparing the results from the black and blue concentrators.  
 
-The charts above have shown that uneven ground can give erronous magnitude but very low standard deviation as it is a steady state error. A sudden impact on the concentrator is enough to push the standard deviation over the expected value but due to the 10 second average it does not casue a dramatic increase in the average magnitude. This resulted in the implementation of a double threshold system where both magnitude and standard deviation were required to be above their threshold value for the device to recognise the concentrator as on. Tests below show the success of this new system.
+The charts above have clearly demonstrated that being on uneven ground can give large mean value readings but very low standard deviation, as it is a steady state error. A sudden impact on the concentrator is enough to push the standard deviation over the expected value but due to the 10 second moving average it does not casue a dramatic increase in the average magnitude. This resulted in the implementation of a double threshold system where both magnitude and standard deviation were required to be above their threshold value for the device to recognise the concentrator as on. Tests below show the success of this new system.
 
-- Using these results we initially attempted to code the double threshold system directly onto the Raspbery Pi Pico, using an integrated LED circuit. Whilst we managed to get it working for the mean threshold, when we added in the standard deviation data we had memory storage issues. For this reason the 'prototype' discussed in the nect section takes the accelerometer readings from the serial port and then does all the calculations and analysis in python on a laptop.
+Using these results we initially attempted to code the double threshold system directly onto the Raspbery Pi Pico, using an integrated LED circuit. Whilst we managed to get it working for the mean threshold, when we added in the standard deviation data we had memory storage issues. For this reason the 'prototype' discussed in the nect section takes the accelerometer readings from the serial port and then does all the calculations and analysis in python on a laptop.
 
 # Prototype
 
