@@ -34,7 +34,7 @@ In order to plot and visualise the accelerometer outputs we used Python in VS Co
 
 Next we attempted to remove the gravitational component of the reading on the accelerometer by using the inbuilt gyros. We tried various filters and algorithms but were unable to find a simple enough solution, and so to avoid wasting time we decided simply to assume the sensor always remains vertical, and remove a value of 1g from the z output.
 
-### Performing testing
+### Testing and Results
 
 In order to test our accelerometer under the same conditions each time, it was important to create a system to mount the breadboard to the concentrator. Using a CAD design and 3D printing, we made clips that are glued to the plastic casing and allowed the breadboard to be attached and removed easily. See clip.STL in the assets file.
 
@@ -117,6 +117,7 @@ By using python to manipulate and plot the readings from the accelerometer it al
 
 **Figure 9:** Breadboard with Raspberry Pi Pico, accelerometer sensor and LED circuit.
 
+# Project management
 
 ### Issues and steps to overcome
 
