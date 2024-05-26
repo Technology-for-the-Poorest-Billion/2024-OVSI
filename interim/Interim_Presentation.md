@@ -16,22 +16,23 @@
 
 ### Setting up the accelerometer
 
-- To allow the Rasberry pi pico to read the accelerometer outputs, we first soldered pins onto the accelerometer so that we could connect it the the breadboard. We then attached the pico and accelerometer onto the breadboard and connected them together using jumper wires between the following pins:
+To allow the Rasberry pi pico to read the accelerometer outputs, we first soldered pins onto the accelerometer so that we could connect it the the breadboard. We then attached the pico and accelerometer onto the breadboard and connected them together using jumper wires between the following pins:
  
  - **2-5V** on accelerometer to **3V3(OUT)** on pico.
  - **SDA** on accelerometer to **I2C1 SDA** on pico.
  - **SCL** on accelerometer to **I2C1 SCL** on pico.
  - **GND** on accelerometer to **GND** on pico.
 
-Reading the ouput:
+Reading the output:
 
-- The next step was to be able to read the outputs from the accelerometer. This was done using an early version of the code main_interim_prototype.mpy and we were able to read the outputs using Thonny. It returned values of the x, y and z components of the acceleration as well as the magnitude.
-- In order to plot and visualise the accelerometer outputs we used python in VS Code to read the serial output and create a live plot using the Matplotlib animation function. An example of this plot can be seen in Figure 1 below.
+The next step was to be able to read the outputs from the accelerometer. This was done using an early version of the code main_interim_prototype.mpy and we were able to read the outputs using Thonny. It returned values of the x, y and z components of the acceleration as well as the magnitude.
+In order to plot and visualise the accelerometer outputs we used python in VS Code to read the serial output and create a live plot using the Matplotlib animation function. An example of this plot can be seen in Figure 1 below.
 
 <img src="assets/plotter_with_magnitude.png" alt="Screenshot of python plotter" width="800"/>
 
 **Figure 1:** Screenshot of the python script plotting the x, y, z components from the accelerometer as well as the magnitude (measured in 'g'). The scale at the bottom shows the last 200 readings (i.e. 2 seconds).
-- Next we attempted to remove the gravitational component of the reading on the accelerometer by using the inbuilt gyros. We tried various filters and algorithms but were unable to find a simple enough solution, and so to avoid wasting time we decided simply to assume the sensor always remains vertical, and remove a value of 1g from the z output.
+
+Next we attempted to remove the gravitational component of the reading on the accelerometer by using the inbuilt gyros. We tried various filters and algorithms but were unable to find a simple enough solution, and so to avoid wasting time we decided simply to assume the sensor always remains vertical, and remove a value of 1g from the z output.
 
 ### Performing testing
 
@@ -47,7 +48,7 @@ We then ran tests to see if we could find a suitable vibration threshold that wo
 
 Each test was run for 120 seconds. We then took the data and calculated the value of every rolling 10s mean and standard deviation. On the graphs we then plotted the smallest value of the rolling mean and standard deviation for the baseline-on test, and then the largest of the mean and standard deviation for the other test cases. 
 
- Figure 2 below shows the results from when the accelerometer was attatched to the black (significantly louder) concentrator. This shows that both the mean magnitude of vibration and the standard deviation when the concentrator is on can be easily differentiated from the other cases. 
+Figure 2 below shows the results from when the accelerometer was attatched to the black (significantly louder) concentrator. This shows that both the mean magnitude of vibration and the standard deviation when the concentrator is on can be easily differentiated from the other cases. 
 
 <img src="assets/black_tests.png" alt="bar chart of tests on black concentrator" width="800"/>
 
@@ -108,7 +109,7 @@ Below is a demonstation video of the above tests being performed.
 
 https://github.com/Technology-for-the-Poorest-Billion/2024-OVSI/assets/98593139/cfc9f4a7-5daf-4990-bf7b-f4c7b06e2e5d
 
-- By using python to manipulate and plot the readings from the accelerometer it allowed for much easier analysis of how the monitoring system was working. However, once we had the above system in place, it was possible to try and convert the concept back into micropython code and use it alongside the LED circuit once again. This is now running successfully, and follows the exact same concept as the above prototype. Figure 9 below shows a photo of the setup, whereby the green LED lights up when both the mean and standard devation values are above the threshold.
+By using python to manipulate and plot the readings from the accelerometer it allowed for much easier analysis of how the monitoring system was working. However, once we had the above system in place, it was possible to try and convert the concept back into micropython code and use it alongside the LED circuit once again. This is now running successfully, and follows the exact same concept as the above prototype. Figure 9 below shows a photo of the setup, whereby the green LED lights up when both the mean and standard devation values are above the threshold.
 
 <img src="assets/led_circuit.jpg" alt="photo of led breadboard set up" width="800"/>
 
