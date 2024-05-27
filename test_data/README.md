@@ -1,8 +1,8 @@
 # Test data
 
-The `.xlsx` files in this folder contain all of the data that was collected during the tests that were performed for the interim report. They file names are constructed with the following naming convention:
+The `.xlsx` files in this folder contain all of the data that was collected during the tests that were performed for the interim report. The file names are constructed with the following naming convention:
 - The first part of the name shows the concentrator that the accelerometer was attached to
-- The second part shows whether or the concentrator with the acceletometer attached was turned on or off
+- The second part shows whether or not the concentrator with the accelerometer attached was turned on or off
 - The rest of the name relates to the particular test being performed
 
 Here is an explanation of each test:
