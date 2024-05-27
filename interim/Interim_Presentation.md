@@ -117,6 +117,8 @@ By using python to manipulate and plot the readings from the accelerometer it al
 
 **Figure 9:** Breadboard with Raspberry Pi Pico, accelerometer sensor and LED circuit.
 
+This prototype aligns well with the project objective which was to test the suitability of different sensors for use in monitoring an oxygen concentrator. We have run various tests to assess how the accelerometer could be used as part of a monitoring device. We have not had much to consider in terms of the context in which the device will be applied due to the fact that we are simply looking at the information that the sensor can provide. However, our final output will contain a list of considerations for Ben and the team as they begin to construct an actual monitoring device, to ensure it will be appropriate for the final environment that it will be used within.
+
 # Project management
 
 ### Issues and steps to overcome
