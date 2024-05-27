@@ -99,7 +99,7 @@ Figure 7 shows the effect of leaving the concentrator on an uneven surface and d
 
 <img src="assets/interim_prototype_tilted.png" alt="screenshot of prototype with blue on tilt" width="800"/>
 
-**Figure 7:** Prototype output when the blue concentrator is turned off and placed on on uneven ground.  
+**Figure 7:** Prototype output when the blue concentrator is turned off and placed on uneven ground.  
 
 Figure 8 shows the Matplotlib interface when the blue concentrator is turned off, but the noisy black concentrator is turned on next to it and making direct contact. Whilst the readings are clearly above zero neither threshold is met and so the screen is red to show that the concentrator is not running.
 
