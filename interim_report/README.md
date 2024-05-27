@@ -1,4 +1,3 @@
 # Interim Report
 
 The file `interim_report.md` demonstrates the progress of the project roughly two and a half weeks into the timeline. It looks at the testing, results and prototype that had been developed up to the date of the report. It assesses how the work completed aligns with the original project proposal, and the different challenges and solutions that have been faced. The report also updates the project management timeline and presents a plan for completion. 
-

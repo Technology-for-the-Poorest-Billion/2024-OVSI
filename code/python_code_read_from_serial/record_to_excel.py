@@ -1,5 +1,5 @@
-#prints readings live and save results to excel from main_interim_prototype.mpy
-#use ctrl + c to save to excel and stop code
+# prints readings live and save results to excel from main_interim_prototype.mpy
+# use ctrl + c to save to excel and stop code
 
 import serial
 import pandas as pd

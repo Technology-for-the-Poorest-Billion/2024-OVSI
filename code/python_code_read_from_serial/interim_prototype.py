@@ -1,7 +1,7 @@
-#this code reads the output from main_interim_prototype.mpy
-#it calculates the mean and standard deviation of the last 1000 readings (roughly 10s)
-#there is a minimum threshold on the current rolling value of the mean and the standard deviation
-#both values must be above the threshold for the screen to turn green, ie oxygen concentrator is on
+# this code reads the output from main_interim_prototype.mpy
+# it calculates the mean and standard deviation of the last 1000 readings (roughly 10s)
+# there is a minimum threshold on the current rolling value of the mean and the standard deviation
+# both values must be above the threshold for the screen to turn green, ie oxygen concentrator is on
 
 import serial # to read from the serial port
 import matplotlib.pyplot as plt
