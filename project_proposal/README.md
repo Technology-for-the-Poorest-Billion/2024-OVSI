@@ -1,0 +1,3 @@
+## The proposal
+
+This project_proposal folder contains two markdown files, `proposal.md` and `management.md`. The `proposal.md` file explains the broad context of the problem that the project is looking to address as well as the engineering approach that will be used to tackle the problem. It also looks at how these two factors align by assessing the value of the project proposal in the context of the problem. The `management.md` file contains all the information relating to the project management of the project including a timeline, risk assessment and contingency plans.
