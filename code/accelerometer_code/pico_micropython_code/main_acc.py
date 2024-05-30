@@ -4,6 +4,7 @@
 # adjusted to account for gravity by assuming sensor is placed vertically
 # tries to ensure that the data is recorded as close to every 0.01s as possible
 # this code is for the ICM-20948 accelerometer sensor
+# code to calibrate and remove offsets in combined_sensor_code\pico_micropython_code folder
 
 from machine import Pin, I2C # used to interact with the pico
 import utime

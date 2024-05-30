@@ -3,6 +3,7 @@
 # and then lights up an LED depending on whether they both reach the desired threshold
 # this code is run standalone and does not require python on the laptop
 # ensure that the led is attached to the correct pin to match the code
+# code to calibrate and remove offsets in combined_sensor_code\pico_micropython_code folder
 
 from machine import Pin, I2C  # used to interact with the pico
 import utime
