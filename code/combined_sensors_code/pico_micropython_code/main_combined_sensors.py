@@ -25,12 +25,15 @@ i2c.writeto_mem(ICM20948_ADDR, REG_PWR_MGMT_1, bytearray([0x01]))
 SENSITIVITY = 16384
 
 # Offsets measured during calibration
-offset_x = 0.0  # Replace with actual offset values
-offset_y = -0.033  # Replace with actual offset values
-offset_z = 0.056  # Replace with actual offset values
+offset_x = 0.001  # Replace with actual offset values
+offset_y = -0.023  # Replace with actual offset values
+offset_z = 0.075  # Replace with actual offset values
 
 # Setup ADC (Analog to Digital Converter) on GPIO 26 (Pin 31) for microphone
 mic = ADC(Pin(26))
+
+# Button setup
+button = Pin(15, Pin.IN, Pin.PULL_UP)
 
 # Variables to find the peak-to-peak amplitude of AUD output
 sample_time = 10
@@ -48,7 +51,7 @@ def read_calibrated_accel():
     if accel_z >= 32768:
         accel_z -= 65536
 
-    accel_x_g = accel_x / SENSITIVITY - offset_x
+    accel_x_g = accel_x / SENSITIVITY - offset_x - 1
     accel_y_g = accel_y / SENSITIVITY - offset_y
     accel_z_g = accel_z / SENSITIVITY - offset_z
     mag = (accel_x_g ** 2 + accel_y_g ** 2 + accel_z_g ** 2) ** 0.5
@@ -89,13 +92,20 @@ def vu_meter(mic_amp):
 
 # Main loop with combined output
 while True:
-    # Read accelerometer data
-    mag = read_calibrated_accel()
-    
-    # Read microphone data
-    mic_output = find_ptp_amp()
-    vu_value = vu_meter(mic_output)
-    
-    # Print the accelerometer magnitude and microphone volume unit
-    print('{:.3f},{:.2f}'.format(mag, vu_value))
+    # Check if the button is pressed
+    if button.value() == 0:  # Button is pressed
+        print("BUTTON_PRESSED")
+        time.sleep(0.5)  # Wait for 1 second before checking again
+    else:
+        # Read accelerometer data
+        mag = read_calibrated_accel()
+        
+        # Read microphone data
+        mic_output = find_ptp_amp()
+        vu_value = vu_meter(mic_output)
+        
+        # Print only the accelerometer magnitude and microphone volume unit
+        print('{:.3f},{:.2f}'.format(mag, vu_value))
+
+
 

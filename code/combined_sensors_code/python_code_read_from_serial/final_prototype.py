@@ -1,3 +1,14 @@
+# the pico must be running the main_combined_sensors.py micropython code
+# the main_combined_sensors.py code should be calibrated using the offset_calibration.py code
+# this code plots the accelerometer mean and std as well as the microphone mean
+# the initial thresholds are set at a reasonable suggested level
+# to set the thresholds properly set the code running and press the button on the device
+# the device should be on the concentrator and the concentrator should be running
+# the screen will turn orange for 10s whilst it perfoms the threshold calibration
+# once the calibration is performed, the screen will show green or red
+# green suggests that the device thinks the concentrator is running
+# red suggests that the device thinks the concentrator is off
+
 import serial
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
