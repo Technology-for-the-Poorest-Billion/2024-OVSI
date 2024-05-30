@@ -1,5 +1,8 @@
 # this code performs the functions described in the interim report
-# it calculates the rolling values of mean and sd, and then lights up an led depending on whether they both reach the desired threshold
+# it calculates the rolling values of mean and sd
+# and then lights up an LED depending on whether they both reach the desired threshold
+# this code is run standalone and does not require python on the laptop
+# ensure that the led is attached to the correct pin to match the code
 
 from machine import Pin, I2C  # used to interact with the pico
 import utime

@@ -1,5 +1,5 @@
-# code for plotting x, y, z components and magnitude using a buffer
-# pico must be using code from main_interim_prototype.mpy
+# code for plotting x, y, z components and magnitude
+# pico must be using code from main_acc.py
 
 import serial
 import matplotlib.pyplot as plt

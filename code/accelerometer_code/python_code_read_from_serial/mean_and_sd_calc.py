@@ -1,6 +1,6 @@
-# prints mean and standard deviation from last 10s of data
+# prints the mean and standard deviation from last 10s of data
 # you must wait 10s before the output starts to print
-# pico should be running code from main_interim_prototype.mpy
+# pico should be running code from main_acc.py
 # Use ctrl + c to stop the code
 
 import serial

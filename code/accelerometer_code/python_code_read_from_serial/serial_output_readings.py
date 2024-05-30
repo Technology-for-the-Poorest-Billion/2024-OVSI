@@ -1,4 +1,4 @@
-# attempts to print the serial output from main_interim_prototype.mpy
+# attempts to print the serial output from main_acc.py
 # has extra tests to try and find any errors
 
 import serial
