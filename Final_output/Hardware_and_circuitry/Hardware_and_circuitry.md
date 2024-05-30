@@ -10,7 +10,7 @@
 - Jumper wires X 10
 - 6mm button
 
-Circuitry_diagram.png
+<img src="assets/Circuitry_diagram.png" alt="Breadboard setup" width="800"/>
 
 ### Mounting solution
 
