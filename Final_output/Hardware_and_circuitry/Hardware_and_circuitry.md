@@ -10,7 +10,7 @@
 - Jumper wires X 10
 - 6mm button
 
-
+Circuitry_diagram.png
 
 ### Mounting solution
 
