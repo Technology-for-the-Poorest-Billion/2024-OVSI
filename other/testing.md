@@ -40,3 +40,19 @@ while True:
     
     # Wait for a short period before reading again
     utime.sleep(0.1)
+
+# button test
+
+from machine import Pin
+import time
+
+# Initialize button on GP14
+button = Pin(14, Pin.IN, Pin.PULL_DOWN)
+
+while True:
+    if button.value():
+        print("Button pressed!")
+    else:
+        print("Button not pressed.")
+    
+    time.sleep(0.5)
