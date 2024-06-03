@@ -1,6 +1,6 @@
 # Final Prototype Demonstration
 
-Following prior testing, we had decided that our monitoring system would use a threshold based system whereby all three thresholds have to be met in order to signal that the concentrator is running. These three thresholds are related to:
+Following prior testing, we had decided that our monitoring system would use a threshold-based system whereby all three thresholds have to be met in order to signal that the concentrator is running. These three thresholds are related to:
 - a 10 second rolling mean of the accelerometer magnitude
 - a 10 second rolling standard deviation of the accelerometer magnitude
 - a 10 second rolling mean of the microphone magnitude
@@ -22,7 +22,7 @@ In Figure 2 the concentrator has now been turned on and it is clear that all thr
 
 <img src="assets/on_red.png" alt="wrongly set thresholds" width="800"/>
 
-**Figure 2:** Screenshot of prototype when the oxygen concentrator is turned on but the thresholds have not been calibrated.
+**Figure 2:** Screenshot of prototype when the oxygen concentrator is turned on, but the thresholds have not been calibrated.
 
 In Figure 3 it shows an orange screen, which means the button has been pressed on the monitoring device, and threshold calibration is taking place. This calibration should be performed when the concentrator is turned on and only in the presence of quiet background noise. The calibration runs for 10 seconds and then adjusts the thresholds based off the incoming data that it has received.
 
@@ -30,13 +30,13 @@ In Figure 3 it shows an orange screen, which means the button has been pressed o
 
 **Figure 3:** Screenshot of prototype when the oxygen concentrator is turned on and the thresholds are being calibrated.
 
-Figure 4 shows a screenshot of the output once calibratiion has been completed. The thresholds have been adjusted to match the specifications of the particular concentrator that it is monitoring. The screen has now turned green, which is correctly monitoring the fact that the concentrator is on and running.
+Figure 4 shows a screenshot of the output once calibration has been completed. The thresholds have been adjusted to match the specifications of the particular concentrator that it is monitoring. The screen has now turned green, which is correctly monitoring the fact that the concentrator is on and running.
 
 <img src="assets/on_green.png" alt="working thresholds" width="800"/>
 
 **Figure 4:** Screenshot of prototype when the oxygen concentrator is turned on and the thresholds have been correctly set.
 
-Finally, Figure 5 shows an example of one of the worst case scenario noise tests. The oxygen concentrator is turned off and has been left on uneven ground. As well as this, a second much more powerful concentrator has been turned on and left running directly next to the concentrator that the device is trying to monitor. Whilst the magnitude threshold has been met, both the noise and standard deviation measures have remained below the thresholds, and so the screen has remained red.
+Finally, Figure 5 shows an example of one of the worst-case scenario noise tests. The oxygen concentrator is turned off and has been left on uneven ground. As well as this, a second much more powerful concentrator has been turned on and left running directly next to the concentrator that the device is trying to monitor. Whilst the magnitude threshold has been met, both the noise and standard deviation measures have remained below the thresholds, and so the screen has remained red.
 
 <img src="assets/off_red_with_noise.png" alt="dealing with noise" width="800"/>
 
