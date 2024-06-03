@@ -1,7 +1,7 @@
-title: Oxygen concentrator monitoring system.
+title: Oxygen Concentrator Monitoring System.
 
-author:
-  name: Harry Antill & Alex Beeston
+
+  <p>Authors: Harry Antill & Alex Beeston</p>
 
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
