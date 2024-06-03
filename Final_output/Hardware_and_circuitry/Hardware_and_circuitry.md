@@ -11,8 +11,11 @@ Final prototype breadboard setup.
 - 10 kΩ resistor
 - Jumper wires X 10
 - 6mm button
+- Header pins
 
 ### Connections
+
+Initially the header pins were soldered to the accelerometer and microphone sensors to allow connections to the Pi Pico.
 
  - **2-5V** on accelerometer to **3V3(OUT)** on pico
  - **SDA** on accelerometer to **I2C1 SDA (GP2)** on pico
