@@ -10,8 +10,7 @@ title: Becoming Part of the Solution to Pneumonia
 
 The Oxygen and Ventilator System Initiative (OVSI) "wants to ensure every individual has reliable and equitable access to essential medical oxygen". One of their key innovation domains is in developing a remote monitoring system that can integrate with all types of existing concentrators to track usage and schedule predictive maintenance. 
 
-<img src="2.%20interim_report/assets/plotter_with_magnitude.png" alt="Screenshot of python plotter" width="800"/>
-
+<img src="Assets/Hospital.png" alt="Screenshot of python plotter" width="800"/>
 
 #### **How We Fit In**
 
