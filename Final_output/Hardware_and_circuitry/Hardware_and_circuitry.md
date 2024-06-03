@@ -14,17 +14,17 @@ Final prototype breadboard setup.
 
 ### Connections
 
- - **2-5V** on accelerometer to **3V3(OUT)** on pico.
- - **SDA** on accelerometer to **I2C1 SDA (GP2)** on pico.
- - **SCL** on accelerometer to **I2C1 SCL (GP3)** on pico.
- - **GND** on accelerometer to **GND** on pico.
+ - **2-5V** on accelerometer to **3V3(OUT)** on pico
+ - **SDA** on accelerometer to **I2C1 SDA (GP2)** on pico
+ - **SCL** on accelerometer to **I2C1 SCL (GP3)** on pico
+ - **GND** on accelerometer to **GND** on pico
 
- - **VCC** on Microphone to **3V3(OUT)** on pico.
- - **GND** on Microphone to **GND** on pico.
- - **AUD** on Microphone to **I2C1 SDA (GP26)** on pico.
+ - **VCC** on Microphone to **3V3(OUT)** on pico
+ - **GND** on Microphone to **GND** on pico
+ - **AUD** on Microphone to **I2C1 SDA (GP26)** on pico
 
- - **One leg** on Switch to **(GP15)** on pico.
- - **Opposite leg** on Switch to **GND** on pico.
+ - **One leg** on Switch to **(GP15)** on pico
+ - **Opposite leg** on Switch to **GND** on pico
  - Resistor connects **GP15** to **live rail** 
 
 Where a pin number is specified in brackets it is required to be compatible with existing code but any GPIO pin will suffice.

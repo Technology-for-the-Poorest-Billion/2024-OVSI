@@ -4,7 +4,7 @@
 # the initial thresholds are set at a reasonable suggested level
 # to set the thresholds properly set the code running and press the button on the device
 # the device should be on the concentrator and the concentrator should be running
-# the screen will turn orange for 10s whilst it perfoms the threshold calibration
+# the screen will turn orange for 10s whilst it performs the threshold calibration
 # once the calibration is performed, the screen will show green or red
 # green suggests that the device thinks the concentrator is running
 # red suggests that the device thinks the concentrator is off

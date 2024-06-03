@@ -1,8 +1,8 @@
 # Further considerations
 
-In this 4 week project we made a triple threshold monitoring device for oxygen concetrators that reliably indicated if the concentrator was being used in a range of simulated interference conditions. In order to take it further a list of potential considerations are given below.
+In this 4 week project we made a triple threshold monitoring device for oxygen concetrators that reliably indicated if the concentrator was being used in a range of simulated interference conditions. In order to take it further, a list of potential considerations are given below.
 
-### Next Steps
+### Additional functions
 
 | Function                     | Explanation                                                                                                                                                                 |
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -14,3 +14,11 @@ In this 4 week project we made a triple threshold monitoring device for oxygen c
 | Specialised Microcontroller  | Design a microcontroller to perform the specific required function. This makes the device cheaper and smaller when mass produced.                                          |
 | Fourier Analysis of Vibrations | Determine frequencies of vibrations through a Fourier analysis. This could give unique signatures for concentrators and be used to detect degradation.                   |
 | GPS tracking                 | Additional GPS tracker in device will provide additional useful information as well as providing an extra threshold for use monitoring to prevent transportation from being confused with use. |
+
+### Additional contextual testing
+
+| Test                    | Explanation                                                                                                                           |
+|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
+| Hospital Test           | There may be interferences that we have not anticipated so a test in a similar environment will be useful.                             |
+| Environmental conditions| Test for high heat and humidity to see impact on function of concentrator and device respectively.                                     |
+| Context                 | Usability study with doctors to find the level of interaction with the device they are willing to have.                                |

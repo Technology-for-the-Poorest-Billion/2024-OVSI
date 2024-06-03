@@ -1,16 +1,16 @@
 # Microphone Testing
 
 In order to test the robustness of the microphone sensor we recorded the output over a range of different tests:
-- measuring the output when the sensor is on a concentrator and the concentrator is running.
-- measuring the output when the sensor is on a concentrator and the concentrator is turned off.
-- measuring the output when the concentrator is turned off but another concentrator is running 10cm away.
-- measuring the output when the concentrator is turned off but there is noise from talking, walking, knocks to the concentrator and random noise from the Dyson Centre workshop.
+- measuring the output when the sensor is on a concentrator and the concentrator is running
+- measuring the output when the sensor is on a concentrator and the concentrator is turned off
+- measuring the output when the concentrator is turned off, but another concentrator is running 10cm away
+- measuring the output when the concentrator is turned off but there is noise from talking, walking, knocks to the concentrator and random noise from the Dyson Centre workshop
 
-Having performed the accelerometer testing it was clear from the large magnitude of vibrations and high noise level from the black concentrator, that it would be the blue concentrator that was the limiting case. So for the microphone testing all of the tests were performed solely on the blue concentrator.
+Having performed the accelerometer testing, it was clear from the large magnitude of vibrations and high noise level from the black concentrator, that it would be the blue concentrator that was the limiting case. Hence, for the microphone testing, all of the tests were performed solely on the blue concentrator.
 
 Figure 1 below shows each the four tests above run under two different conditions:
-- the microphone was attached to the concentrator with no external casing
-- the microphone was attached to the concentrator when surrounded in a cardboard box filled with sponge foam
+- the microphone attached to the concentrator with no external casing
+- the microphone attached to the concentrator when surrounded by a cardboard box filled with sponge foam
 
 The set-up and explanation of the sponge foam as noise isolation can be found in the `hardware_and_circuitry.md` file.
 
