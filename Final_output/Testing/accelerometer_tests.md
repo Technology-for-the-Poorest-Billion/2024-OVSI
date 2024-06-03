@@ -24,7 +24,7 @@ However, the Figure 2 below tells a different story. The blue EverFlo concentrat
 
 **Figure 2:** Bar chart from the testing performed on the blue concentrator.  
 
-Figure 4 shows the readings from the tests performed on the two oxygen concentrators placed next to each other for easy comparison. This shows that any strongly vibrating machinery placed nearby to the blue concentrator could result in false readings, whereas for the black concentrator it is much easier to differentiate the on and off state.
+Figure 3 shows the readings from the tests performed on the two oxygen concentrators placed next to each other for easy comparison. This shows that any strongly vibrating machinery placed nearby to the blue concentrator could result in false readings, whereas for the black concentrator it is much easier to differentiate the on and off state.
 
 <img src="assets/Blue_and_black_comparison.png" alt="comparison of blue and black tests" width="800"/>
 
