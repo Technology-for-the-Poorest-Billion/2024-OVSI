@@ -1,5 +1,5 @@
 title: "Oxygen Concentrator Monitoring System."
-author: "<p>Authors: Harry Antill & Alex Beeston</p>"
+author: "Authors: Harry Antill & Alex Beeston"
 description: >
   An innovative solution for monitoring usage of oxygen concentrators, implementing accelerometer and microphone sensors to 
   give vital information to the ministry of health in LEDCs.
