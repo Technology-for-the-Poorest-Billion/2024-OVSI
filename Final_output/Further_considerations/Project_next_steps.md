@@ -4,17 +4,13 @@ In this 4 week project we made a triple threshold monitoring device for oxygen c
 
 ### Next Steps
 
-| Accelerometer                                                                                      | Microphone                                        |
-|---------------------------------------------------------------------------------------------------|---------------------------------------------------|
-| Create syncing program to determine threshold for concentrator automatically.                    | Specialist housing to isolate concentrator noise. |
-| Machine learning to adapt threshold over time as the concentrator degrades, need to get a big enough data set to perform machine learning. | Look at coupling it with accelerometer data to give better diagnosis of problems. |
-| Improved housing for accelerometer (ensure vibration are not damped) + testing to find the optimum attachment location on concentrator. |                                                   |
-| Gyro used to eliminate gravity component so orientation not important, rather than manually zeroing readings. If not possible then add in additional calibration functionality. |                                                   |
-| Better simulate hospital conditions to test accuracy.                                             |                                                   |
-| How will it perform in the environmental conditions.                                              |                                                   |
-| Create outsourcing of data for processing.                                                        |                                                   |
-| LED on device to indicate if concentrator is on or off.                                           |                                                   |
-| Create specialised microcontroller.                                                               |                                                   |
-| Fourier analysis of vibration to identify frequency changes to degradation.                       |                                                   |
-| GPS system to help with tracking and eliminate transport false positive.                          |                                                   |
-| Usability study with doctors, find level of interaction with the device they are willing to do.   |                                                   |
+| Function                     | Explanation                                                                                                                                                                 |
+|------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Microphone Housing           | Create more sophisticated housing for the microphone sensor to isolate input from the concentrator and make the device more robust to external noise.                        |
+| Accelerometer Housing        | Improved housing to reduce vibration damping through the attachment method. Also test to find the optimum location for the accelerometer on the concentrator casing to receive vibrations. |
+| Degradation Monitoring       | Use machine learning algorithms to adjust thresholds over time as function fluctuates due to degradation. A very large data set would be required to allow this to be extended to predictive maintenance. |
+| Non-Orientation Specific     | Use gyro to eliminate the gravity component so orientation is not important. This is preferable to manually setting the readings to zero for the still case.               |
+| Visual Indicator             | Incorporating an LED on the device to give visual reading on the device will allow for immediate recognition of device failure or malfunction.                               |
+| Specialised Microcontroller  | Design a microcontroller to perform the specific required function. This makes the device cheaper and smaller when mass produced.                                          |
+| Fourier Analysis of Vibrations | Determine frequencies of vibrations through a Fourier analysis. This could give unique signatures for concentrators and be used to detect degradation.                   |
+| GPS tracking                 | Additional GPS tracker in device will provide additional useful information as well as providing an extra threshold for use monitoring to prevent transportation from being confused with use. |
