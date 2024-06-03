@@ -7,11 +7,13 @@ Our project addresses a critical healthcare challenge: ensuring reliable access 
 Our monitoring system uses sensors to track whether an oxygen concentrator is running. We tested various sensors and decided on a combination of an accelerometer and a microphone. These sensors measure the level of vibrations and noise, respectively. The prototype device uses a threshold-based system, where three conditions must be simultaneously met for the concentrator to be confirmed as running, which are all determined based off the information that the sensors are providing to the device.
 
 We demonstrated the resilience of our prototype to several test-cases:
+
 In all of the tests that were performed, when the concentrator was on and running, the device was able to correctly display this status 100% of the time.
 Of the eight simulations performed to test the monitoring device under different operating conditions, it proved to be robust against external noise in all but one case. With further testing and refinement of the model, as well as incorporating smart machine learning algorithms, it is hoped that the device will eventually be resilient to all types of interference.
 The device has in-built calibration capabilities, so that the thresholds can be set to ensure that the device is compatible with any brand of oxygen concentrator.
 
 The device's status is displayed using a simple colour-coded system:
+
 Red: The concentrator is off.
 Orange: The device is in calibration mode.
 Green: The concentrator is on and running.
