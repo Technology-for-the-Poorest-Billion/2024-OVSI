@@ -29,4 +29,4 @@ Green: The concentrator is on and running.
 
 Below is an image of the prototype attached to a typical oxygen concentrator. The final device will contain all of the sensors and components in a simple yet effective housing, which will protect them from the harsh environmental conditions.
 
-<img src="Assets/Full_prototype.jpeg" alt="photo of prototype" width="800"/>
+<img src="Assets/Full_prototype.jpeg" alt="photo of prototype" width="300"/>
