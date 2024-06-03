@@ -5,7 +5,7 @@ title: Landing page of the website
 ## Introduction
 
 
-Bla bla bla.
+Bla bla bla bla.
 
 
 ### To configure your website:
