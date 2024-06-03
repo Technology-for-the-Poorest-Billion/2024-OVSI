@@ -21,12 +21,12 @@ We demonstrated the resilience of our prototype to several test-cases:
 
 The device's status is displayed using a simple colour-coded system:
 
-Red: The concentrator is off.
-Orange: The device is in calibration mode.
-Green: The concentrator is on and running.
+Red: The concentrator is off.  
+Orange: The device is in calibration mode.  
+Green: The concentrator is on and running.  
 
 #### **The Prototype**
 
 Below is an image of the prototype attached to a typical oxygen concentrator. The final device will contain all of the sensors and components in a simple yet effective housing, which will protect them from the harsh environmental conditions.
 
-<img src="Assets/Hospital.png" alt="Screenshot of python plotter" width="800"/>
+<img src="Assets/Full_prototype.png" alt="photo of prototype" width="800"/>
