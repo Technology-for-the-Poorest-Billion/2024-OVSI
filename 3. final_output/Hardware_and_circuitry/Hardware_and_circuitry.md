@@ -48,11 +48,11 @@ The microphone is shown attached to the breadboard for the purpose of the schema
 
 ### Breadboard attachment
 
-In order to run tests reproducibly and be able to quickly mount and dismount the breadboard for alteration, we designed custom clips. These were 3D printed from PLA filament after SolidWorks modelling. The STL file for the [clip](/3.final_output/Hardware_and_circuitry/Assets/clip.STL) is shown in the Assets folder. Two clips were used per concentrator, superglued to a flat surface of the plastic casing. See [further considerations](/3.final_output/Further_considerations/) for how this can be improved.
+In order to run tests reproducibly and be able to quickly mount and dismount the breadboard for alteration, we designed custom clips. These were 3D printed from PLA filament after SolidWorks modelling. The STL file for the [clip](/3. final_output/Hardware_and_circuitry/Assets/clip.STL) is shown in the Assets folder. Two clips were used per concentrator, superglued to a flat surface of the plastic casing. See [further considerations](/3. final_output/Further_considerations/) for how this can be improved.
 
 ### Sound isolation for microphone sensor
 
-As seen in [testing](/3.final_output/Testing/) initial microphone tests were not promising for differentiating between concentrator sound and background noise. In order to rectify this, a solution was required to isolate the concentrator noise and exclude external noise. 
+As seen in [testing](/3. final_output/Testing/) initial microphone tests were not promising for differentiating between concentrator sound and background noise. In order to rectify this, a solution was required to isolate the concentrator noise and exclude external noise. 
 To do this as a rapid prototype, the sensor was taped to the inside of a box with a hole facing the concentrator. The box was then filled with foam to exclude external noise. The setup is shown below with the box open for aid of visualisation:
 
 <img src="Assets/Foam_fill.png" alt="Microphone noise isolation" width="300"/>
