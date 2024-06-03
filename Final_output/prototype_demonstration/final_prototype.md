@@ -42,4 +42,8 @@ Finally, Figure 5 shows an example of one of the worst case scenario noise tests
 
 **Figure 5:** Screenshot of prototype when the oxygen concentrator is turned off and the thresholds have been correctly set, but the concentrator has been left on uneven ground and there is noise from another nearby concentrator.
 
-In reality further tests...
+Throughout all of the various tests that have been performed (as can be found in the `testing` folder), this threshold system proved to be robust against most sources of external noise that we were able to simulate in the Dyson Centre workshop.
+
+It is important, however, that further tests are performed under the conditions that this device would actually be used, in order to see what level of precision and reliability it can achieve.
+
+Further considerations for both the refinement and improvement of this prototype can be found in the `further_considerations` folder. 
