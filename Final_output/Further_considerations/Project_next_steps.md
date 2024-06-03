@@ -1,6 +1,6 @@
 # Further considerations
 
-In this 4 week project we made a triple threshold monitoring device for oxygen concetrators that reliably indicated if the concentrator was being used in a range of simulated interference conditions. In order to take it further a list of potential considerations are given below.
+In this 4 week project we made a triple threshold monitoring device for oxygen concetrators that reliably indicated if the concentrator was being used in a range of simulated interference conditions. In order to take it further, a list of potential considerations are given below.
 
 ### Additional functions
 
