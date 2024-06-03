@@ -4,11 +4,11 @@ title: Project Management
 
 Effective project management relies heavily on a robust teamwork strategy. By leveraging the strengths of each team member and ensuring seamless collaboration, projects are more likely to succeed. This page will outline the teamwork strategy used in the project, examining what worked well, what didn’t, and providing constructive recommendations for improvement. 
 
-#### Teamwork Strategy
+#### **Teamwork Strategy**
 
 Having a defined strategy for teamwork becomes more important as the size of the team increases. Hence, for a two-person project, being fluid in our roles and responsibilities was both acceptable and effective as long as communication was maintained. Having worked together before there was already familiarity with the working patterns of the other person allowing for a seamless start to the project. GitHub was the prescribed method of documenting the project progress and this aided teamwork as it is clear what work has been done so repeating or omitting work is unlikely. Based on the respective strengths of the team, we took ownership of broad areas of the project, with Alex responsible for code and Harry responsible for Hardware. As the project developed, help was provided both ways and collaborative work on testing was undertaken. 
 
-#### What Worked
+### What Worked
 
 **Effective communication** – the majority of our work was done in the same room allowing the project aims to always stay at the forefront of thinking and troubleshooting between team members to be natural and rapid. 
 
