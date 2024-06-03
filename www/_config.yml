@@ -29,7 +29,8 @@ plugins:
 # in order as they should show up.
 header_pages:
   - about.md
-  - index.md
+  - project_management.md
+  - sustainable_development_goals.md
   
 
 # Set to `true` to show excerpts on the homepage.
