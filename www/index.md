@@ -28,7 +28,9 @@ This is a [link](linkedpage.md) to interesting content.
 
 Which results in:
 
-This is a [link](linkedpage.md) to interesting content.
+This is a [link](about.md) to project description
+This is a [link](sustainable_development_goals.md) to sustainable development goals
+This is a [link](project_management.md) to project management
 
 - Pay attention to the header of the markdown files in this section. It contains a title section that you will need to reproduce for each page to render them properly.
 
