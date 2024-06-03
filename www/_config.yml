@@ -1,14 +1,13 @@
-title: Cool project 2024
+title: Oxygen concentrator monitoring system.
 
 author:
-  name: Student name 1, Student name 2, etc.
+  name: Harry Antill & Alex Beeston
 
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
 description: >
-  Write an awesome description for your new site here. You can edit this line
-  in _config.yml. It will appear in your document head meta (for Google search
-  results) and in your feed.xml site description.
+  An innovative solution for monitoring usage of oxygen concentrators, implementing accelerometer and microphone sensors to 
+  give vital information to the ministry of health in LEDCs.
 
 # Build settings
 
@@ -30,9 +29,11 @@ plugins:
 # in order as they should show up.
 header_pages:
   - about.md
+  - index.md
+  
 
 # Set to `true` to show excerpts on the homepage.
-#show_excerpts: false
+show_excerpts: true
 
 # Minima specific settings, which are only available from Minima 3.0 onward.
 minima:
