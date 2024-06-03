@@ -31,9 +31,9 @@ Where a pin number is specified in brackets it is required to be compatible with
 
 For testing of each sensor seperately as the same pin connections were used.
 
-Rasberry pi pico wh datasheet:
+Rasberry Pi Pico WH datasheet:
 
-https://datasheets.raspberrypi.com/picow/pico-w-datasheet.pdf (03/06/2024)
+https://datasheets.raspberrypi.com/picow/pico-w-datasheet.pdf , Accessed:(03/06/2024)
 
 ### Circuit setup schematic
 
@@ -52,7 +52,7 @@ In order to run tests reproducably and be able to quickly mount and dismount the
 As seen in [testing](/Final_output/Testing/) initial microphone tests were not promising for differentiating between concentrator sound and background noise. In order to rectify this, a solution was required to isolate the concentrator noise and exclude external noise. 
 To do this as a rapid prototype, the sensor was taped to the inside of a box with a hole facing the concentrator. The box was then filled with foam to exlude external noise. The setup is shown below with the box open for aid of visualisation:
 
-<img src="Assets/Foam_fill.png" alt="Microphone noise isolation" width="500"/>
+<img src="Assets/Foam_fill.png" alt="Microphone noise isolation" width="300"/>
 
 The data for the success of this setup is shown in the testing section.
 
