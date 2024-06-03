@@ -1,12 +1,12 @@
 # Accelerometer Testing
 
 In order to test the robustness of the accelerometer sensor we recorded the accelerometer output over a range of different tests:
-- measuring the output when the sensor is on a concentrator and the concentrator is running.
-- measuring the output when the sensor is on a concentrator and the concentrator is turned off.
-- measuring the output when the concentrator is turned off, but another concentrator is running and making direct contact.
-- measuring the output when the concentrator is turned off, but another concentrator is running 10cm away.
-- measuring the output when the concentrator is turned off but there is external noise from walking, talking, rolling a trolley and other noises from the Dyson Centre workshop.
-- measuring the output when the concentrator is turned off, but it has been left on an uneven slope.
+- measuring the output when the sensor is on a concentrator and the concentrator is running
+- measuring the output when the sensor is on a concentrator and the concentrator is turned off
+- measuring the output when the concentrator is turned off, but another concentrator is running and making direct contact
+- measuring the output when the concentrator is turned off, but another concentrator is running 10cm away
+- measuring the output when the concentrator is turned off but there is external noise from walking, talking, rolling a trolley and other noises from the Dyson Centre workshop
+- measuring the output when the concentrator is turned off, but it has been left on an uneven slope
 
 Each of these tests were performed firstly with the accelerometer on the black oxygen concentrator and using the blue concentrator to make noise in the other tests. Then they were performed with the accelerometer on the blue concentrator and the black concentrator was used to make noise. The exact models of the two concentrators can be found in the `hardware_and_circuitry.md` file.
 
