@@ -11,5 +11,5 @@
 - 6mm button
 
 ### Mounting solution
-<img src="Assets/Circuitry_diagram.png" alt="circuit diagram" width="800"/>
+<img src="Assets/circuit_diagram.png" alt="circuit diagram" width="800"/>
 ### Sound isolation for microphone sensor
