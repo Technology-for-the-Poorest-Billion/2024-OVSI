@@ -48,7 +48,7 @@ The microphone is shown attached to the breadboard for the purpose of the schema
 
 ### Breadboard attachment
 
-In order to run tests reproducibly and be able to quickly mount and dismount the breadboard for alteration, we designed custom clips. These were 3D printed from PLA filament after SolidWorks modelling. The STL file for the [clip](/3. final_output/Hardware_and_circuitry/Assets/clip.STL) is shown in the Assets folder. Two clips were used per concentrator, superglued to a flat surface of the plastic casing. See [further considerations](/3. final_output/Further_considerations/) for how this can be improved.
+In order to run tests reproducibly and be able to quickly mount and dismount the breadboard for alteration, we designed custom clips. These were 3D printed from PLA filament after SolidWorks modelling. The STL file for the [clip](</3. final_output/Hardware_and_circuitry/Assets/clip.STL>) is shown in the Assets folder. Two clips were used per concentrator, superglued to a flat surface of the plastic casing. See [further considerations](/3. final_output/Further_considerations/) for how this can be improved.
 
 ### Sound isolation for microphone sensor
 
