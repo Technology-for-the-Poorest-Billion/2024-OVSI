@@ -25,6 +25,8 @@ Red: The concentrator is off.
 Orange: The device is in calibration mode.  
 Green: The concentrator is on and running.
 
+<img src="Assets/BeFunky-collage.png" alt="screenshot of prototype code" width="700"/>
+
 #### **The Prototype**
 
 Below is an image of the prototype during testing, attached to a typical oxygen concentrator. The final device will contain all of the sensors and components in a simple yet effective housing, which will protect them from the harsh environmental conditions.
