@@ -8,3 +8,4 @@ Below is a brief explanation of what is contained in each folder:
 - `3_code` contains both the Micropython code for the Pi Pico and Python code for reading the output of the sensors through the serial port, and converting it into a live interface.
 - `4_further_considerations` contains a markdown document for suggestion for the next steps of the project, including ideas for refinement of the prototype, and further research that could be conducted.
 - `5_testing_results` contains the results of the tests performed on the accelerometer and microphone used in producing the final prototype.
+- `6_final_presentation` contains a .pdf file containing the slides to our final powerpoint presentation, as well as an .mp4 video of our final presentation.
