@@ -17,7 +17,7 @@ https://www.unicef.org/innovation/resilient-oxygen-concentrators
 
 #### **How We Fit In**
 
-Our aim was to assess the feasability of a non-intrusive monitoring device for oxygen concentrators. This involved experimenting with different sensors such as microphones and accelerometers to provide useful insight for OVSI on the most promising approaches to collecting usage data on oxygen concentrators. See [Our Prototype](about.md) page for more information.
+Our aim was to assess the feasibility of a non-intrusive monitoring device for oxygen concentrators. This involved experimenting with different sensors such as microphones and accelerometers to provide useful insight for OVSI on the most promising approaches to collecting usage data on oxygen concentrators. See [Our Prototype](about.md) page for more information.
 
 
 
