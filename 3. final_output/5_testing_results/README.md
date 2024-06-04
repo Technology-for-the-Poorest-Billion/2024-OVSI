@@ -6,3 +6,5 @@ The testing was performed in the following order:
 - Accelerometer testing
 - Microphone testing
 - Combined testing with both sensors
+
+The raw data from all of these tests can be found in `5. test_data_sets`.

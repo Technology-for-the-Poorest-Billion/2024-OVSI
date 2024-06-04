@@ -11,3 +11,5 @@ Here is an explanation of each test:
 - '10cm away' means that another concentrator was turned on and placed 10cm away from the concentrator being measured
 - 'Trolley and walking' explains the sources of noise that were present during testing
 - 'Uneven ground' shows the test results when the concentrator was left on uneven ground
+
+Further information can be found in `3. final_output/5_testing_results`.
