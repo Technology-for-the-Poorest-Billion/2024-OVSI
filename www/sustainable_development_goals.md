@@ -2,7 +2,7 @@
 title: Sustainable Development
 ---
 
-The UNs sustainable development goals (SDGs) ‘are a call to action to end poverty and inequality, protect the planet, and ensure that all people enjoy health, justice and prosperity’ (World Health Organisation 2021). These goals provide a framework for governments, firms, and individuals to work towards achieving a more sustainable and equitable future. The below points show how our project aligns with the SDGs to promote a better and more sustainable future.
+The United Nations' sustainable development goals (SDGs) are ‘a call to action to end poverty and inequality, protect the planet, and ensure that all people enjoy health, justice and prosperity’ (World Health Organisation 2021). These goals provide a framework for governments, firms, and individuals to work towards achieving a more sustainable and equitable future. The below points show how our project aligns with the SDGs to promote a better and more sustainable future.
 
 #### **SDG 3: Good Health and Well-being**
 
@@ -30,4 +30,4 @@ This project begun the initial design and development of a monitoring device whi
 
 **Target 17.6:** Enhance North-South, South-South, and triangular regional and international cooperation on and access to science, technology, and innovation and enhance knowledge sharing on mutually agreed terms.  
 
-The project encourages collaboration between various stakeholders, including Ministries of Health, biomedical engineers, and international organizations. There is a strong focus on knowledge sharing and implementing inclusive innovation in the development of new healthcare technologies.
+The project encourages collaboration between various stakeholders, including Ministries of Health, biomedical engineers, and international organizations. This project had a strong focus on knowledge sharing and implementing inclusive innovation in the development of new healthcare technologies.
